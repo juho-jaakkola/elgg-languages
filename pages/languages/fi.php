@@ -25,6 +25,8 @@ $finnish = array(
 	'pages:history' => "Historia",
 	'pages:view' => "Näytä sivu",
 	'pages:revision' => "Versio",
+	'pages:current_revision' => "Tämänhetkinen versio",
+	'pages:revert' => "Palauta",
 
 	'pages:navigation' => "Navigaatio",
 	'pages:new' => "Uusi wikisivu",
@@ -75,6 +77,9 @@ Lue ja kommentoi sivua:
 	'pages:error:no_title' => 'Syötä sivulle otsikko.',
 	'pages:delete:success' => 'Sivu poistettiin.',
 	'pages:delete:failure' => 'Sivun poistaminen epäonnistui.',
+	'pages:revision:delete:success' => 'Versio poistettu.',
+	'pages:revision:delete:failure' => 'Version poistaminen epäonnistui.',
+	'pages:revision:not_found' => 'Versiota ei löydy.',
 
 	/**
 	 * Page

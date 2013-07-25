@@ -28,9 +28,10 @@ $finnish = array(
 	'developers:label:show_strings' => "Näytä käännösten alkuperäiset merkkijonot",
 	'developers:help:show_strings' => "Tämä näyttää merkkijonot, jotka syötetään elgg_echo()-käännösfunktiolle.",
 	'developers:label:wrap_views' => "Lisää html-kommentit näkymiin",
-	'developers:help:wrap_views' => "Tämä lisää lähes kaikkien näkymien alkuun ja loppuun HTML-kommentit. Tämä on hyödyllistä etsittäessä näkymää, joka on luonut jonkin tietyn HTML-koodin.",
-	'developers:label:log_events' => "Merkite event ja plugin hook -toiminnot lokiin.",
-	'developers:help:log_events' => " Merkite event ja plugin hook -toiminnot lokiin. Varoitus: näitä voi olla hyvinkin useita kutakin sivua kohden.",
+	'developers:help:wrap_views' => "Tämä lisää lähes kaikkien näkymien alkuun ja loppuun HTML-kommentit. Tämä on hyödyllistä etsittäessä näkymää, joka on luonut jonkin tietyn HTML-koodin.
+		Tämä voi rikkoa näkymiä, jotka eivät käytä HTML-näkymätyyppiä. Katso tarkemmat tiedot funktiosta developers_wrap_views().",
+	'developers:label:log_events' => "Merkitse event ja plugin hook -toiminnot lokiin.",
+	'developers:help:log_events' => " Merkitse event ja plugin hook -toiminnot lokiin. Varoitus: näitä voi olla hyvin useita yksittäistä sivua kohden.",
 
 	'developers:debug:off' => 'Pois päältä',
 	'developers:debug:error' => 'Virheet',

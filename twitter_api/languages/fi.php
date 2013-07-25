@@ -24,8 +24,9 @@ $finnish = array(
 	'twitter_api:usersettings:site_not_configured' => 'Sivuston ylläpitäjän pitää syöttää Twitteriin liittyvät asetukset ennen kuin sitä voidaan käyttää.',
 
 	'twitter_api:revoke:success' => 'Twitter-yhteys peruttu.',
+	'twitter_api:post_to_twitter' => "Lähetä tilapäivitykset Twitteriin?",
 
-	'twitter_api:login' => 'Salli olemassa olevien käyttäjien määrittää Twitter-asetukset ja kirjautua sisään Twitter-tilin avulla?',
+	'twitter_api:login' => 'Salli kirjautuminen Twitter-tilin avulla?',
 	'twitter_api:new_users' => 'Salli uusien käyttäjien rekisteröityä Twitter-tilin avulla vaikka rekisteröityminen olisi otettu pois käytöstä?',
 	'twitter_api:login:success' => 'Olet kirjautunut sisään.',
 	'twitter_api:login:error' => 'Twitterin avulla kirjautuminen epäonnistui.',

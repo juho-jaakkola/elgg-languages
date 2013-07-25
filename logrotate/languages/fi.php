@@ -20,9 +20,10 @@ $finnish = array(
 	'logrotate:week' => 'viikko',
 	'logrotate:month' => 'kuukausi',
 	'logrotate:year' => 'vuosi',
+	'logrotate:never' => 'älä poista',
 		
 	'logrotate:logdeleted' => "Loki poistettu\n",
-	'logrotate:lognotdeleted' => "Lokin poistaminen epäonnistui\n",
+	'logrotate:lognotdeleted' => "Lokeja ei poistettu\n",
 );
 
 add_translation("fi", $finnish);
