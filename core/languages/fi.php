@@ -359,6 +359,7 @@ $finnish = array(
 	'friendspicker:chararray' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ',
 
 	'avatar' => 'Profiilikuva',
+	'avatar:noaccess' => "Sinulla ei ole oikeuksia muokata tämän käyttäjän profiilikuvaa",
 	'avatar:create' => 'Rajaa profiilikuva',
 	'avatar:edit' => 'Muokkaa profiilikuvaa',
 	'avatar:preview' => 'Esikatselu',
@@ -902,6 +903,7 @@ $finnish = array(
 	'total' => 'Yhteensä',
 
 	'learnmore' => "Klikkaa tästä lukeaksesi lisää.",
+	'unknown_error' => 'Tuntematon virhe',
 
 	'content' => "content",
 	'content:latest' => 'Viimeisin toiminta',
@@ -1193,6 +1195,7 @@ Tähän viestiin ei voi vastata.",
 	'actiongatekeeper:timeerror' => 'Käyttämäsi sivu on vanhentunut. Päivitä sivu ja yritä uudelleen.',
 	'actiongatekeeper:pluginprevents' => 'Lisäosa estää tämän lomakkeen lähetyksen.',
 	'actiongatekeeper:uploadexceeded' => 'Lähettämäsi datan koko ylittää sivuston ylläpitäjän määrittämän maksimirajan',
+	'actiongatekeeper:crosssitelogin' => "Eri domainista kirjautuminen ei ole sallittua. Yritä uudelleen.",
 
 
 /**
