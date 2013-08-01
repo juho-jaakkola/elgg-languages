@@ -5,7 +5,7 @@
  * @package ElggFile
  */
 
-$finnish = array(
+return array(
 
 	/**
 	 * Menu items and titles
@@ -77,14 +77,14 @@ $finnish = array(
 
 	'item:object:file' => 'Tiedostot',
 
-	'file:newupload' => 'Uusi tiedosto lisätty',
-	'file:notification' =>
-'%s lisäsi uuden tiedoston:
+	'file:notify:summary' => 'Uusi tiedosto: %s',
+	'file:notify:subject' => 'Uusi tiedosto %s',
+	'file:notify:body' =>
+'%s lisäsi uuden tiedoston: %s
 
 %s
-%s
 
-Tarkastele ja kommentoi uutta tiedostoa:
+Voit nähdä tiedoston täällä:
 %s
 ',
 
@@ -114,5 +114,3 @@ Tarkastele ja kommentoi uutta tiedostoa:
 		'file:cannotload' => "Tiedoston lisäämisessä tapahtui virhe",
 		'file:nofile' => "Sinun pitää valita tiedosto",
 );
-
-add_translation("fi", $finnish);

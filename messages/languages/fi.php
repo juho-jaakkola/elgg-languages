@@ -5,7 +5,7 @@
 * @package ElggMessages
 */
 
-$finnish = array(
+return array(
 	/**
 	* Menu items and titles
 	*/
@@ -20,6 +20,7 @@ $finnish = array(
 	'messages:message' => "Viesti",
 	'messages:title' => "Aihe",
 	'messages:to' => "Vastaanottaja",
+	'messages:to:help' => "Kirjoita vastaanottajan nimi.",
 	'messages:from' => "Lähettäjä",
 	'messages:fly' => "Lähetä",
 	'messages:replying' => "Message replying to",
@@ -88,9 +89,8 @@ Tähän sähköpostiviestiin ei voi vastata.",
 	'messages:nomessages' => "Ei viestejä.",
 	'messages:user:nonexist' => "Valitsemaasi vastaanottajaa ei löytynyt käyttäjärekisteristä.",
 	'messages:user:blank' => "Et valinnut viestille vastaanottajaa.",
+	'messages:user:self' => "Et voi lähettää viestiä itsellesi.",
 
 	'messages:deleted_sender' => 'Poistettu käyttäjä',
 
 );
-		
-add_translation("fi", $finnish);

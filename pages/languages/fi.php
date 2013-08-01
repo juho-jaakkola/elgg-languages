@@ -5,7 +5,7 @@
  * @package ElggPages
  */
 
-$finnish = array(
+return array(
 
 	/**
 	 * Menu items and titles
@@ -20,6 +20,7 @@ $finnish = array(
 	'pages:group' => "Ryhmän wikit",
 	'groups:enablepages' => 'Ota käyttöön ryhmän wikit',
 
+	'pages:new' => "Uusi sivu",
 	'pages:edit' => "Muokkaa sivua",
 	'pages:delete' => "Poista tämä sivu",
 	'pages:history' => "Historia",
@@ -29,14 +30,15 @@ $finnish = array(
 	'pages:revert' => "Palauta",
 
 	'pages:navigation' => "Navigaatio",
-	'pages:new' => "Uusi wikisivu",
-	'pages:notification' =>
-'%s lisäsi uuden wikisivun:
+	
+	'pages:notify:summary' => 'Uusi wikisivu: %s',
+	'pages:notify:subject' => 'Uusi wikisivu: %s',
+	'pages:notify:body' =>
+'%s lisäsi uuden wikisivun: %s
 
 %s
-%s
 
-Lue ja kommentoi sivua:
+Voit lukea sivun täällä:
 %s
 ',
 	'item:object:page_top' => 'Päätason wikisivut',
@@ -115,5 +117,3 @@ Lue ja kommentoi sivua:
 	'pages:newchild' => "Luo alasivu",
 	'pages:backtoparent' => "Takaisin sivulle '%s'",
 );
-
-add_translation("fi", $finnish);

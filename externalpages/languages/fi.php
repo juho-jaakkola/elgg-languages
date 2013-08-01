@@ -3,7 +3,7 @@
  * External pages Finnish language file
  */
 
-$finnish = array(
+return array(
 
 	/**
 	 * Menu items and titles
@@ -23,5 +23,3 @@ $finnish = array(
 	'expages:posted' => "Sivu päivitetty.",
 	'expages:error' => "Sivun tallentaminen epäonnistui.",
 );
-
-add_translation("fi", $finnish);

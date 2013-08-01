@@ -6,7 +6,7 @@
  * @subpackage ElggUserValidationByEmail
  */
 
-$finnish = array(
+return array(
 	'admin:users:unvalidated' => 'Vahvistamattomat käyttäjät',
 	
 	'email:validate:subject' => "%s, vahvista sähköpostiosoitteesi palveluun %s.",
@@ -57,5 +57,3 @@ Jos et voi klikata linkkiä, kopioi se selaimesi osoiteriville.
 	'uservalidationbyemail:messages:resent_validations' => 'Vahvistusviesti uudellenlähetetty valituille käyttäjille.'
 
 );
-
-add_translation("fi", $finnish);

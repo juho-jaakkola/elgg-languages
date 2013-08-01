@@ -4,10 +4,10 @@
  *
  */
 
-$finnish = array(
+return array(
 	// menu
 	'admin:develop_tools' => 'Työkalut',
-	'admin:develop_tools:preview' => 'Teemojen kehittäminen',
+	'admin:develop_tools:sandbox' => 'Teemojen kehittäminen',
 	'admin:develop_tools:inspect' => 'Tekninen rakenne',
 	'admin:develop_tools:unit_tests' => 'Yksikkötestit',
 	'admin:developers' => 'Kähittäjät',
@@ -37,25 +37,27 @@ $finnish = array(
 	'developers:debug:error' => 'Virheet',
 	'developers:debug:warning' => 'Varoitukset',
 	'developers:debug:notice' => 'Huomautukset',
-	
+	'developers:debug:info' => 'Info',
+
 	// inspection
 	'developers:inspect:help' => 'Tarkastele sivuston teknistä rakennetta.',
 
 	// event logging
 	'developers:event_log_msg' => "%s: '%s, %s' in %s",
 
-	// theme preview
-	'theme_preview:general' => 'Ohjeet',
-	'theme_preview:breakout' => 'Käytä koko näytön tilaa',
-	'theme_preview:buttons' => 'Painikkeet',
-	'theme_preview:components' => 'Komponentit',
-	'theme_preview:forms' => 'Lomakkeet',
-	'theme_preview:grid' => 'Palstat',
-	'theme_preview:icons' => 'Ikonit',
-	'theme_preview:modules' => 'Moduulit',
-	'theme_preview:navigation' => 'Navigaatio',
-	'theme_preview:typography' => 'Typografia',
-	'theme_preview:miscellaneous' => 'Miscellaneous',
+	// theme sandbox
+	'theme_sandbox:general' => 'Ohjeet',
+	'theme_sandbox:breakout' => 'Käytä koko näytön tilaa',
+	'theme_sandbox:buttons' => 'Painikkeet',
+	'theme_sandbox:components' => 'Komponentit',
+	'theme_sandbox:forms' => 'Lomakkeet',
+	'theme_sandbox:grid' => 'Palstat',
+	'theme_sandbox:icons' => 'Ikonit',
+	'theme_sandbox:javascript' => 'JavaScript',
+	'theme_sandbox:layouts' => 'Layouts',
+	'theme_sandbox:modules' => 'Moduulit',
+	'theme_sandbox:navigation' => 'Navigaatio',
+	'theme_sandbox:typography' => 'Typografia',
 
 	// unit tests
 	'developers:unit_tests:description' => 'Elgg sisältää yksikkö- ja integraatiotestejä, joiden avulla voidaan havaita virheitä sen ytimen luokissa ja funktioissa.',
@@ -65,5 +67,3 @@ $finnish = array(
 	// status messages
 	'developers:settings:success' => 'Asetukset tallennettu',
 );
-
-add_translation('fi', $finnish);

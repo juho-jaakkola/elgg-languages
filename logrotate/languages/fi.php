@@ -5,7 +5,7 @@
  * @package ElggLogRotate
  */
 
-$finnish = array(
+return array(
 	'logrotate:period' => 'Kuinka usein järjestelmän loki tulisi arkistoida?',
 
 	'logrotate:weekly' => 'Kerran viikossa',
@@ -25,5 +25,3 @@ $finnish = array(
 	'logrotate:logdeleted' => "Loki poistettu\n",
 	'logrotate:lognotdeleted' => "Lokeja ei poistettu\n",
 );
-
-add_translation("fi", $finnish);

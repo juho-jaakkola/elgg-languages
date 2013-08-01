@@ -5,7 +5,7 @@
  * @package ElggLogBrowser
  */
 
-$finnish = array(
+return array(
 	'admin:administer_utilities:logbrowser' => 'Lokiselain',
 	'logbrowser' => 'Lokiselain',
 	'logbrowser:browse' => 'Selaa järjestelmän lokia',
@@ -26,5 +26,3 @@ $finnish = array(
 
 	'logbrowser:no_result' => 'Ei tuloksia',
 );
-
-add_translation("fi", $finnish);

@@ -1,6 +1,6 @@
 <?php
 
-$finnish= array(
+return array(
 
 	'friends:all' => 'Kaikki ystävät',
 
@@ -22,5 +22,3 @@ $finnish= array(
 	'notifications:subscriptions:success' => 'Ilmoitusasetukset tallennettu.',
 
 );
-
-	add_translation("fi", $finnish);

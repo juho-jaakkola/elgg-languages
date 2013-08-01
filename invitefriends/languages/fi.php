@@ -6,7 +6,7 @@
  * @package ElggInviteFriends
  */
 
-$finnish = array(
+return array(
 
 	'friends:invite' => 'Kutsu kavereita',
 	
@@ -37,6 +37,4 @@ Liittyäksesi sivustolle klikkaa tästä:
 
 Tulette automaattisesti toistenne kavereiksi luodessasi käyttäjätilisi.',
 	
-	);
-					
-add_translation("fi", $finnish);
+);

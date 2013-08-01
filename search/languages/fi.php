@@ -1,6 +1,6 @@
 <?php
 
-$finnish = array(
+return array(
 	'search:enter_term' => 'Syötä hakusana:',
 	'search:no_results' => 'Ei hakutuloksia.',
 	'search:matched' => 'Matched: ',
@@ -16,6 +16,5 @@ $finnish = array(
 	'search:comment_on' => 'Kommentti kohteelle "%s"',
 	'search:comment_by' => 'käyttäjältä', // by
 	'search:unavailable_entity' => 'Kohde, jota ei saatavilla',
+	'search:unknown_entity' => 'Tuntematon kohdetyyppi',
 );
-
-add_translation('fi', $finnish);

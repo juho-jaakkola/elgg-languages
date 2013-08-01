@@ -3,7 +3,7 @@
  * The Wire Finnish language file
  */
 
-$finnish = array(
+return array(
 
 	/**
 	 * Menu items and titles
@@ -21,7 +21,6 @@ $finnish = array(
 	'item:object:thewire' => "Tilapäivitykset",
 	'thewire:update' => 'Päivitä',
 	'thewire:by' => 'Käyttäjän %s tilapäivitys',
-
 	'thewire:previous' => "Edellinen",
 	'thewire:hide' => "Piilota",
 	'thewire:previous:help' => "Näytä edellinen viesti",
@@ -47,15 +46,21 @@ $finnish = array(
 	'thewire:deleted' => "Tilapäivitys poistettu.",
 	'thewire:blank' => "Lisää jotakin sisältöä ennen tallennusta.",
 	'thewire:notfound' => "Hakemaasi tilapäivitystä ei löytynyt.",
+	'thewire:notsaved' => "Tilan tallentaminen epäonnistui.",
 	'thewire:notdeleted' => "Tilapäivituksen poistaminen epäonnistui.",
 
 	/**
 	 * Notifications
 	 */
-	'thewire:notify:subject' => "Uusi tilapäivitys",
+	'thewire:notify:summary' => 'Tilapäivitys: %s',
+	'thewire:notify:subject' => "Uusi tilapäivitys: %s",
 	'thewire:notify:reply' => '%s vastasi käyttäjän %s tilapäivitykseen:',
 	'thewire:notify:post' => '%s päivitti tilansa:',
+	'thewire:notify:footer' => "Voit vastata tilapäivitykseen täällä:\n%s",
 
+	/**
+	 * Settings
+	 */
+	'thewire:settings:limit' => "Tilapäivityksen suurin sallittu merkkimäärä:",
+	'thewire:settings:limit:none' => "Ei rajaa",
 );
-
-add_translation("fi", $finnish);

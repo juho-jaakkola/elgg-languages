@@ -3,7 +3,7 @@
  * Members Finnish language file
  */
 
-$finnish = array(
+return array(
 	'members:label:newest' => 'Uusimmat',
 	'members:label:popular' => 'Suosituimmat',
 	'members:label:online' => 'Kirjautuneet',
@@ -12,5 +12,3 @@ $finnish = array(
 	'members:title:searchname' => 'Jäsenien haku nimellä %s',
 	'members:title:searchtag' => 'Tagilla %s merkityt jäsenet',
 );
-
-add_translation('fi', $finnish);

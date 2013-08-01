@@ -4,7 +4,7 @@
  *
  */
 
-$finnish = array(
+return array(
 	'blog' => 'Blogit',
 	'blog:blogs' => 'Blogit',
 	'blog:revisions' => 'Versiot',
@@ -40,6 +40,7 @@ $finnish = array(
 	// messages
 	'blog:message:saved' => 'Blogi tallennettu.',
 	'blog:error:cannot_save' => 'Blogiviestiä ei voida tallentaa.',
+	'blog:error:cannot_auto_save' => 'Blogin automaattinen tallentaminen ei toimi.',
 	'blog:error:cannot_write_to_container' => 'Sinulla ei ole oikeuksia luoda blogia tähän ryhmään.',
 	'blog:messages:warning:draft' => 'Tästä blogiviestistä on tallentamaton luonnos!',
 	'blog:edit_revision_notice' => '(Vanha versio)',
@@ -49,6 +50,7 @@ $finnish = array(
 	'blog:error:missing:title' => 'Syötä blogille otsikko!',
 	'blog:error:missing:description' => 'Syötä blogiviestin sisältö!',
 	'blog:error:cannot_edit_post' => 'Tämä blogiviesti on saatettu poistaa tai sinulla ei ole oikeuksia sen muokkaamiseen.',
+	'blog:error:post_not_found' => 'Blogiviestiä ei löydy.',
 	'blog:error:revision_not_found' => 'Versiota ei löydy.',
 
 	// river
@@ -56,15 +58,15 @@ $finnish = array(
 	'river:comment:object:blog' => '%s kommentoi blogiviestiä %s',
 
 	// notifications
-	'blog:newpost' => 'Uusi blogiviesti',
+	'blog:notify:summary' => 'Uusi blogiviesti %s',
+	'blog:newpost' => 'Uusi blogiviesti: %s',
 	'blog:notification' =>
 '
-%s julkaisi uuden blogikirjoituksen.
+%s julkaisi uuden blogikirjoituksen: %s
 
 %s
-%s
 
-Lue ja kommentoi blogikirjoitusta:
+Voit lukea blogikirjoituksen täällä:
 %s
 ',
 
@@ -74,5 +76,3 @@ Lue ja kommentoi blogikirjoitusta:
 	'blog:numbertodisplay' => 'Näytettävien kohteiden määrä',
 	'blog:noblogs' => 'Ei blogiviestejä'
 );
-
-add_translation('fi', $finnish);

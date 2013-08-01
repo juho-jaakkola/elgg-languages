@@ -3,7 +3,7 @@
  * Bookmarks Finnish language file
  */
 
-$finnish = array(
+return array(
 
 	/**
 	 * Menu items and titles
@@ -26,10 +26,13 @@ $finnish = array(
 	'bookmarks:address' => "Kirjanmerkin osoite",
 	'bookmarks:none' => 'Ei kirjanmerkkejä',
 
+	'bookmarks:notify:summary' => 'Uusi kirjanmerkki: %s',
+	'bookmarks:notify:subject' => 'Uusi kirjanmerkki: %s',
 	'bookmarks:notification' =>
-'%s lisäsi uuden kirjanmerkin:
+'%s lisäsi uuden kirjanmerkin: %s
 
-%s - %s
+Osoite: %s
+
 %s
 
 Lue ja kommentoi kirjanmerkkiä:
@@ -64,12 +67,12 @@ Lue ja kommentoi kirjanmerkkiä:
 	'bookmarks:widget:description' => "Näytä viimeisimmät kirjanmerkkisi.",
 
 	'bookmarks:bookmarklet:description' =>
-			"Sovelluskirjanmerkin avulla voit jakaa mitä tahansa internetistä löytyvää sisältöä ystäviesi kanssa tai tallentaa sen vain omiin kirjanmerkkeihisi. Käyttääksesi toimintoa, raahaa painike selaimesi kirjanmerkkiriville:",
+			"Sovelluskirjanmerkki on selaimen kirjanmerkkipalkkiin tallennettava painike. Sen avulla voit tallentaa nettisivuja ja halutessasi myös jakaa ne ystäviesi kanssa. Käyttääksesi toimintoa, raahaa painike selaimesi kirjanmerkkiriville:",
 	'bookmarks:bookmarklet:descriptionie' =>
 			"Jos käytät Internet Explorer -selainta, klikkaa painiketta hiiren oikealla painikkeella, valitse \"Lisää Suosikit-kansioon...\" ja lisää painike suosikkeihisi.",
 			
 	'bookmarks:bookmarklet:description:conclusion' =>
-			"Tämän jälkeen voit nappulaa painamalla tallentaa kirjanmerkkeihisi minkä tahansa sivun, jolla vierailet.",
+			"Tämän jälkeen voit nappulaa painamalla tallentaa kirjanmerkkeihisi minkä tahansa sivun.",
 
 	/**
 	 * Status messages
@@ -85,6 +88,5 @@ Lue ja kommentoi kirjanmerkkiä:
 	'bookmarks:save:failed' => "Kirjanmerkkiä ei voitu tallentaa. Tarkista, että syötit sekä otsikon että osoitteen ja yritä uudelleen.",
 	'bookmarks:save:invalid' => "Kirjanmerkin osoite oli virheellinen, joten sitä ei voitu tallentaa.",
 	'bookmarks:delete:failed' => "Kirjanmerkin poistaminen epäonnistui. Yritä uudelleen.",
+	'bookmarks:unknown_bookmark' => 'Kirjanmerkkiä ei löytynyt',
 );
-
-add_translation('fi', $finnish);

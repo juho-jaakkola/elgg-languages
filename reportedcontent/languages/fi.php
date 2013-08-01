@@ -5,7 +5,7 @@
  * @package ElggReportedContent
  */
 
-$finnish = array(
+return array(
 
 	'item:object:reported_content' => 'Ilmiannetut kohteet',
 	'admin:administer_utilities:reportedcontent' => 'Asiaton sisältö',
@@ -40,5 +40,3 @@ $finnish = array(
 	'reportedcontent:failed' => 'Ilmoituksen tekeminen epäonnistui.',
 	'reportedcontent:notarchived' => 'Ilmoituksen arkistoiminen epäonnistui',
 );
-
-add_translation("fi", $finnish);

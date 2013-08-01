@@ -3,7 +3,7 @@
  * Categories Finnish language file
  */
 
-$finnish = array(
+return array(
 	'categories' => 'Kategoriat',
 	'categories:settings' => 'Määrittele sivuston kategoriat',
 	'categories:explanation' => 'Määritä sivustolla käytettävät kategoriat pilkulla erotettuna luettelona. Nämä kategoriat ovat sitten käytettävissä kaikissa yhteensopivissa työkaluissa käyttäjien luodessa tai muokatessa sisältöä.',
@@ -11,5 +11,3 @@ $finnish = array(
 	'categories:results' => "Hakutulokset kategorialle: %s",
 	'categories:on_activate_reminder' => "Sivustonlaajuiset kategoriat eivät ole käytettävissä ennen kuin ne on määritetty hallintapaneelista. <a href=\"%s\">Lisää kategoriat nyt.</a>",
 );
-
-add_translation("fi", $finnish);

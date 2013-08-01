@@ -5,7 +5,7 @@
  * @package ElggDiagnostics
  */
 
-$finnish = array(
+return array(
 	'admin:administer_utilities:diagnostics' => 'Järjestelmän diagnostiikka',
 	'diagnostics' => 'Järjestelmän diagnostiikka',
 	'diagnostics:report' => 'Raportti',
@@ -41,5 +41,3 @@ Global variables:
 %s
 ------------------------------------------------------------------------',
 );
-
-add_translation("fi",$finnish);

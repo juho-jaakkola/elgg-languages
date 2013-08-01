@@ -5,7 +5,7 @@
  * @package ElggGarbageCollector
  */
 
-$finnish = array(
+return array(
 	'garbagecollector:period' => 'Kuinka usein siivoustoiminto ajetaan?',
 
 	'garbagecollector:weekly' => 'Kerran viikossa',
@@ -21,5 +21,3 @@ $finnish = array(
 
 	'garbagecollector:gc:metastrings' => 'Poistetaan turhat merkkijonot metatiedoista: ',
 );
-
-add_translation("fi", $finnish);

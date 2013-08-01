@@ -4,7 +4,7 @@
  *
  */
 
-$finnish = array(
+return array(
 	'embed:embed' => 'Upota',
 	'embed:media' => 'Upota sisältöä',
 	'embed:instructions' => 'Valitse tiedosto upottaaksesi sen osaksi sisältöä.',
@@ -18,5 +18,3 @@ $finnish = array(
 	'embed:no_sections' => 'No supported embed plugins found. Ask the site administrator to enabled a plugin with embed support.',
 	'embed:no_sections' => 'Upottamista tukevia liitännäisiä ei löytynyt. Pyydä sivuston ylläpitäjää ottamaan käyttöön liitännäisiä, jotka tukevat upottamista.',
 );
-
-add_translation("fi", $finnish);

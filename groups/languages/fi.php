@@ -5,7 +5,7 @@
  * @package ElggGroups
  */
 
-$finnish = array(
+return array(
 
 	/**
 	 * Menu items and titles
@@ -41,6 +41,9 @@ $finnish = array(
 	'groups:members:title' => 'Jäsenet ryhmässä: %s',
 	'groups:members:more' => "Näytä kaikki jäsenet",
 	'groups:membership' => "Ryhmän jäsenyysasetukset",
+	'groups:content_access_mode' => "Pääsy ryhmän sisältöihin",
+	'groups:content_access_mode:unrestricted' => "Rajoittamaton - Näkyvyys riippuu kunkin sisällön omasta näkyvyystasosta",
+	'groups:content_access_mode:membersonly' => "Vain jäsenet - Ryhmän ulkopuoliset eivät pääse ollenkaan käsiksi sisältöihin",
 	'groups:access' => "Pääsyoikeudet",
 	'groups:owner' => "Omistaja",
 	'groups:owner:warning' => "Varoitus: Jos muutat tätä, luovut ryhmän omistajuudesta.",
@@ -75,14 +78,16 @@ $finnish = array(
 	'groups:search_in_group' => "Etsi tästä ryhmästä",
 	'groups:acl' => "Ryhmä: %s",
 
-	'discussion:notification:topic:subject' => 'Uusi keskustelu ryhmässä',
-	'groups:notification' =>
+	'discussion:topic:notify:summary' => 'Uusi keskustelu: %s',
+	'discussion:topic:notify:subject' => 'Uusi keskustelu: %s',
+	'discussion:topic:notify:body' =>
 '%s lisäsi uuden keskustelun ryhmään %s:
 
-%s
+Aihe: %s
+
 %s
 
-Osallistu keskusteluun:
+Voit osallistua keskusteluun osoitteessa:
 %s
 ',
 
@@ -128,6 +133,9 @@ Osallistu keskusteluun:
 	'groups:access:group' => 'Vain ryhmän jäsenet',
 	'groups:closedgroup' => 'Tällä ryhmällä on suljettu jäsenyys.',
 	'groups:closedgroup:request' => 'Klikkaa linkkiä "Ano ryhmän jäsenyyttä" päästäksesi jäseneksi.',
+	'groups:closedgroup:membersonly' => "Tällä ryhmällä on suljettu jäsenyys, ja vain jäsenet pääsevät käsiksi sen sisältöihin.",
+	'groups:opengroup:membersonly' => "Vain jäsenillä on pääsy tämän ryhmän sisältöihin.",
+	'groups:opengroup:membersonly:join' => 'Klikkaa "Liity ryhmään" päästäksesi ryhmän jäseneksi.',
 	'groups:visibility' => 'Kuka voi nähdä tämän ryhmän?',
 
 	/*
@@ -174,6 +182,7 @@ Osallistu keskusteluun:
 	'groups:newest' => 'Uusimmat',
 	'groups:popular' => 'Suosituimmat',
 	'groupspost:success' => 'Vastauksesi tallennettiin',
+	'groupspost:failure' => 'Vastauksen tallentaminen epäonnistui',
 	'groups:alldiscussion' => 'Viimeisimmät keskustelut',
 	'groups:edittopic' => 'Muokkaa keskustelun aihetta',
 	'groups:topicmessage' => 'Viesti',
@@ -188,7 +197,6 @@ Osallistu keskusteluun:
 	'groups:topicclosed' => 'Suljettu',
 	'groups:topicresolved' => 'Käsitelty',
 	'grouptopic:created' => 'Uusi keskustelu luotu.',
-	'groupstopic:deleted' => 'Keskustelu poistettu.',
 	'groups:topicsticky' => 'Sticky',
 	'groups:topicisclosed' => 'Tämä aihe on suljettu.',
 	'groups:topiccloseddesc' => 'Tämä keskustelu on suljettu eikä siihen voi enää lisätä kommentteja.',
@@ -293,7 +301,4 @@ tai tästä nähdäksesi ryhmän jäsenanomukset:
 	// ecml
 	'groups:ecml:discussion' => 'Ryhmän keskustelut',
 	'groups:ecml:groupprofile' => 'Ryhmät',
-
 );
-
-add_translation("fi", $finnish);

@@ -3,7 +3,7 @@
  * Likes Finnish language file
  */
 
-$finnish = array(
+return array(
 	'likes:this' => 'tykkää tästä',
 	'likes:deleted' => 'Tykkäys poistettu',
 	'likes:see' => 'Katso, ketkä tykkäsivät tästä',
@@ -39,5 +39,3 @@ Terveisin,
 ',
 	
 );
-
-add_translation('fi', $finnish);
