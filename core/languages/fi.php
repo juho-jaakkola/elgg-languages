@@ -6,7 +6,7 @@
  * @subpackage Languages.Finnish
  */
 
-$finnish = array(
+return array(
 /**
  * Sites
  */
@@ -27,15 +27,18 @@ $finnish = array(
 	'logout' => "Kirjaudu ulos",
 	'logoutok' => "Olet kirjautunut ulos.",
 	'logouterror' => "Uloskirjautuminen epäonnistui. Yritä uudelleen.",
+	'session_expired' => "Sessiosi on vanhentunut. Päivitä sivu kirjautuaksesi sisään.",
 
 	'loggedinrequired' => "Tämän sivun näkyminen edellyttää, että olet kirjautuneena sisään.",
 	'adminrequired' => "Tämän sivun näkyminen edellyttää ylläpitäjän oikeuksia.",
 	'membershiprequired' => "Sinun pitää olla ryhmän jäsen nähdäksesi tämän sivun.",
+	'limited_access' => "Sinulla ei ole oikeuksia tämän sivun tarkasteluun.",
 
 
 /**
  * Errors
  */
+
 	'exception:title' => "Virhe.",
 	'exception:contact_admin' => 'Tapahtui virhe. Ota yhteys sivuston ylläpitäjään ja toimita seuraavat tiedot:',
 
@@ -43,26 +46,6 @@ $finnish = array(
 	'actionnotfound' => "Tiedostoa, johon toiminto %s viittaa, ei löytynyt.",
 	'actionloggedout' => "Tämän toiminnon suorittaminen edellyttää, että olet kirjautuneena sisään.",
 	'actionunauthorized' => 'Sinulla ei ole oikeuksia tämän toiminnon suorittamiseen',
-
-	'InstallationException:SiteNotInstalled' => 'Pyyntöä ei voitu suorittaa. Sivusto '
-		. ' on väärin konfiguroitu tai tietokanta on kaatunut.',
-	'InstallationException:MissingLibrary' => 'Ei kyetty lataamaan %s',
-	'InstallationException:CannotLoadSettings' => 'Elgg ei pystynyt lataamaan asetustiedostoa. Tiedosto joko puuttuu tai Elggillä ei ole oikeuksia sen lukemiseen.',
-
-	'SecurityException:Codeblock' => "Estettiin pääsy rajoitettuun koodilohkoon.",
-	'DatabaseException:WrongCredentials' => "Elgg ei pysty avaamaan tietokantayhteyttä annetuilla asetuksilla. Tarkista asetustiedoston sisältö.",
-	'DatabaseException:NoConnect' => "Elgg ei pystynyt valitsemaan tietokantaa '%s'. Tarkista, että tietokanta on olemassa ja sinulla on oikeus sen käyttöön.",
-	'SecurityException:FunctionDenied' => "Pääsy rajoitettuun toiminnallisuuteen '%s' on estetty.",
-	'DatabaseException:DBSetupIssues' => "Ongelmia havaittu: ",
-	'DatabaseException:ScriptNotFound' => "Elgg ei löytänyt pyydettya tietokantaskriptiä %s.",
-	'DatabaseException:InvalidQuery' => "Virheellinen tietokantakysely",
-	'DatabaseException:InvalidDBLink' => "Menetettiin yhteys tietokantaan.",
-
-	'IOException:FailedToLoadGUID' => "Uuden %s-entiteetin lataaminen GUID:sta %d epäonnistui",
-	'InvalidParameterException:NonElggObject' => "Yritettiin antaa ElggObjektin konstruktorille objekti, joka ei ole ElggObjekti!",
-	'InvalidParameterException:UnrecognisedValue' => "Tunnistamaton arvo annettu konstruktorille.",
-
-	'InvalidClassException:NotValidElggStar' => "GUID:%d ei ole kelvollinen %s",
 
 	'PluginException:MisconfiguredPlugin' => "%s (guid: %s) on virheellisesti konfiguroitu liitännäinen ja se poistettiin käytöstä. Voit yrittää löytää ratkaisun ongelmaan Elggin wikistä (http://docs.elgg.org/wiki/).",
 	'PluginException:CannotStart' => '%s (guid: %s) ei käynnisty. Syy: %s',
@@ -72,23 +55,22 @@ $finnish = array(
 	'PluginException:InvalidPlugin' => '%s on virheellinen plugini.',
 	'PluginException:InvalidPlugin:Details' => '%s ei ole kelvollinen plugini: %s',
 	'PluginException:NullInstantiated' => 'ElggPluginista ei voi luoda ilmentymää null-arvolla. Syötä GUID, plugin id tai polku.',
-
 	'ElggPlugin:MissingID' => 'Plugin-ID puuttuu (guid %s)',
 	'ElggPlugin:NoPluginPackagePackage' => 'ElggPluginPackage pluginille %s (guid %s) puuttuu',
-
 	'ElggPluginPackage:InvalidPlugin:MissingFile' => 'Tiedosto %s puuttuu.',
+	'ElggPluginPackage:InvalidPlugin:InvalidId' => 'Tämän pluginin hakemisto täytyy nimetä muotoon "%s".',
 	'ElggPluginPackage:InvalidPlugin:InvalidDependency' => 'Manifestissa on virheellinen riippuvuustyyppi "%s".',
 	'ElggPluginPackage:InvalidPlugin:InvalidProvides' => 'Manifestissa on virheellinen "tarjoaa" tyyppi "%s".',
 	'ElggPluginPackage:InvalidPlugin:CircularDep' => 'Virheellinen %s riippuvuus "%s" pluginissa %s. Pluginit eivät voi vaatia toimintoa tai olla konfliktissa toiminnon kanssa, jonka ne itse tarjoavat!',
-
 	'ElggPlugin:Exception:CannotIncludeFile' => 'Ei voida lisätä toiminnallisuutta %s pluginille %s (guid: %s) sijainnissa %s. Tarkista tiedosto-oikeudet!',
 	'ElggPlugin:Exception:CannotRegisterViews' => 'Ei voida avata näkymähakemistoa pluginille %s (guid: %s) sijainnissa %s. Tarkista tiedosto-oikeudet!',
 	'ElggPlugin:Exception:CannotRegisterLanguages' => 'Ei voida rekisteröidä käännöksiä pluginille %s (guid: %s) sijainnissa %s. Tarkista tiedosto-oikeudet!',
 	'ElggPlugin:Exception:NoID' => 'Ei löydetty ID:tä pluginille guid %s!',
-
+	'PluginException:NoPluginName' => "Liitännäisen nimeä ei löytynyt",
 	'PluginException:ParserError' => 'Virhe yrittäessä käsitellä infotiedostoa API-versiolla %s pluginissa %s.',
 	'PluginException:NoAvailableParser' => 'Ei löydetty käsittelijää infotiedoston API-versiolle %s pluginissa %s.',
 	'PluginException:ParserErrorMissingRequiredAttribute' => "Pakollinen '%s' attribuutti puuttuu pluginin %s infotiedostosta.",
+	'ElggPlugin:InvalidAndDeactivated' => '%s on virheellinen liitännäinen, joten se poistettiin käytöstä.',
 
 	'ElggPlugin:Dependencies:Requires' => 'Vaatimus',
 	'ElggPlugin:Dependencies:Suggests' => 'Suositus',
@@ -98,6 +80,7 @@ $finnish = array(
 	'ElggPlugin:Dependencies:Priority' => 'Prioriteetti',
 
 	'ElggPlugin:Dependencies:Elgg' => 'Elgg-versio',
+	'ElggPlugin:Dependencies:PhpVersion' => 'PHP-versio',
 	'ElggPlugin:Dependencies:PhpExtension' => 'PHP-laajennos: %s',
 	'ElggPlugin:Dependencies:PhpIni' => 'PHP ini -asetus: %s',
 	'ElggPlugin:Dependencies:Plugin' => 'Plugini: %s',
@@ -106,121 +89,6 @@ $finnish = array(
 	'ElggPlugin:Dependencies:Priority:Uninstalled' => '%s ei ole asennettuna',
 	'ElggPlugin:Dependencies:Suggests:Unsatisfied' => 'Puuttuu',
 
-	'ElggPlugin:InvalidAndDeactivated' => '%s on virheellinen liitännäinen, joten se poistettiin käytöstä.',
-
-	'InvalidParameterException:NonElggUser' => "Yritettiin antaa ei-ElggUser ElggUser-konstruktorille!",
-
-	'InvalidParameterException:NonElggSite' => "Yritettin antaa ei-ElggSite ElggSite-konstruktorille!",
-
-	'InvalidParameterException:NonElggGroup' => "Yritettin antaa ei-ElggGroup ElggGroup-konstruktorille!",
-
-	'IOException:UnableToSaveNew' => "Ei pystytty tallentamaan uutta %s.",
-
-	'InvalidParameterException:GUIDNotForExport' => " GUID:ia ei ole määritetty viennin aikana. Tätä ei koskaan pitäisi tapahtua.",
-	'InvalidParameterException:NonArrayReturnValue' => "Entiteetin serialisointiin tarkoitetulle funktiolle syötettiin palautusarvoparametri, joka ei ole taulukko",
-
-	'ConfigurationException:NoCachePath' => "Välimuistin polku on tyhjä!",
-	'IOException:NotDirectory' => "%s ei ole hakemisto.",
-
-	'IOException:BaseEntitySaveFailed' => "Ei voitu tallentaa uuden objektin entiteettitietoja!",
-	'InvalidParameterException:UnexpectedODDClass' => "import()-toiminnolle yritettiin syöttää odottamaton ODD-luokka",
-	'InvalidParameterException:EntityTypeNotSet' => "Entiteetille pitää olla määritettynä tyyppi.",
-
-	'ClassException:ClassnameNotClass' => "%s ei ole %s.",
-	'ClassNotFoundException:MissingClass' => "Luokkaa '%s' ei löytynyt. Tämä saattaa johtua puuttuvasta liitännäisestä?",
-	'InstallationException:TypeNotSupported' => "Tyyppi %s ei ole tuettu. Tämä voi johtua sivustossasi olevasta virheestä, joka on todennäköisesti aiheutunut epäonnistuneesta päivityksestä.",
-
-	'ImportException:ImportFailed' => "Ei voitu tuoda elementtiä %d",
-	'ImportException:ProblemSaving' => "Tapahtui virhe yritettäessä tallentaa %s",
-	'ImportException:NoGUID' => "Luotiin uusi entiteetti, jolta puuttuu GUID. Tätä ei pitäisi koskaan tapahtua.",
-
-	'ImportException:GUIDNotFound' => "Entiteettiä '%d' ei löydetty.",
-	'ImportException:ProblemUpdatingMeta' => "Ongelma yrittäessä tallentaa '%s' entiteetille '%d'",
-
-	'ExportException:NoSuchEntity' => "Entiteettiä ei löytynyt GUID:%d",
-
-	'ImportException:NoODDElements' => "Tuontidatasta ei löytynyt OpenDD-elementtejä. Tuonti epäonnistui.",
-	'ImportException:NotAllImported' => "Kaikkia elementtejä ei tuotu.",
-
-	'InvalidParameterException:UnrecognisedFileMode' => "Tunnistamaton tiedosto-oikeus '%s'",
-	'InvalidParameterException:MissingOwner' => "Tiedostolta %s (tiedostom guid:%d) (omistajam guid:%d) puuttuu omistaja!",
-	'IOException:CouldNotMake' => "Ei voitu luoda %s",
-	'IOException:MissingFileName' => "Sinun pitää määrittää nimi ennen tiedoston avaamista.",
-	'ClassNotFoundException:NotFoundNotSavedWithFile' => "Ei pystytty avaamaan filestore-luokkaa %s tiedostolle %u",
-	'NotificationException:NoNotificationMethod' => "Tiedotustapaa ei ole määritetty.",
-	'NotificationException:NoHandlerFound' => "Käsittelijää objektille '%s' ei löynyt tai sitä ei voi kutsua.",
-	'NotificationException:ErrorNotifyingGuid' => "Tapahtui virhe yritettäessä lähettää ilmoitusta entiteetille %d",
-	'NotificationException:NoEmailAddress' => "Sähköpostiosoitetta entiteetille GUID:%d ei löytynyt",
-	'NotificationException:MissingParameter' => "Pakollinen parametri '%s' puuttuu",
-
-	'DatabaseException:WhereSetNonQuery' => "Where-osio sisältää virheellisen WhereQueryComponentin",
-	'DatabaseException:SelectFieldsMissing' => "Kentät puuttuvat select-tyyppisestä kyselystä",
-	'DatabaseException:UnspecifiedQueryType' => "Tunnistamaton tai määrittelemätön kyselytyyppi.",
-	'DatabaseException:NoTablesSpecified' => "Kyselyyn ei ole määritetty tietokantatauluja.",
-	'DatabaseException:NoACL' => "Tietokantakyselyssä ei määritetty pääsyoikeuksia",
-
-	'InvalidParameterException:NoEntityFound' => "Entiteettiä ei löytynyt. Sitä ei joko ole olemassa, tai sinulla ei ole pääsyä siihen.",
-
-	'InvalidParameterException:GUIDNotFound' => "Objektia GUID:%s ei löydetty tai sinulla ei ole pääsyä siihen.",
-	'InvalidParameterException:IdNotExistForGUID' => "Arvoa '%s' ei ole olemassa entiteetille guid:%d",
-	'InvalidParameterException:CanNotExportType' => "Entiteetille '%s' ei pysty tekemään tuontia",
-	'InvalidParameterException:NoDataFound' => "Dataa ei löytynyt.",
-	'InvalidParameterException:DoesNotBelong' => "Ei kuulu entiteettiin.",
-	'InvalidParameterException:DoesNotBelongOrRefer' => "Ei kuulu tai viittaa entiteettiin.",
-	'InvalidParameterException:MissingParameter' => "Puuttuva parametri. Sinun pitää antaa GUID.",
-	'InvalidParameterException:LibraryNotRegistered' => 'Kirjastoa %s ei ole rekisteröity',
-	'InvalidParameterException:LibraryNotFound' => 'Kirjaston %s lataaminen sijainnista %s epäonnistui',
-
-	'APIException:ApiResultUnknown' => "API Result is of an unknown type, this should never happen.",
-	'ConfigurationException:NoSiteID' => "No site ID has been specified.",
-	'SecurityException:APIAccessDenied' => "Sorry, API access has been disabled by the administrator.",
-	'SecurityException:NoAuthMethods' => "No authentication methods were found that could authenticate this API request.",
-	'SecurityException:ForwardFailedToRedirect' => 'Redirect could not be issued due to headers already being sent. Halting execution for security. Search http://docs.elgg.org/ for more information.',
-	'InvalidParameterException:APIMethodOrFunctionNotSet' => "Method or function not set in call in expose_method()",
-	'InvalidParameterException:APIParametersArrayStructure' => "Parameters array structure is incorrect for call to expose method '%s'",
-	'InvalidParameterException:UnrecognisedHttpMethod' => "Unrecognised http method %s for api method '%s'",
-	'APIException:MissingParameterInMethod' => "Missing parameter %s in method %s",
-	'APIException:ParameterNotArray' => "%s does not appear to be an array.",
-	'APIException:UnrecognisedTypeCast' => "Unrecognised type in cast %s for variable '%s' in method '%s'",
-	'APIException:InvalidParameter' => "Invalid parameter found for '%s' in method '%s'.",
-	'APIException:FunctionParseError' => "%s(%s) has a parsing error.",
-	'APIException:FunctionNoReturn' => "%s(%s) returned no value.",
-	'APIException:APIAuthenticationFailed' => "Method call failed the API Authentication",
-	'APIException:UserAuthenticationFailed' => "Method call failed the User Authentication",
-	'SecurityException:AuthTokenExpired' => "Authentication token either missing, invalid or expired.",
-	'CallException:InvalidCallMethod' => "%s must be called using '%s'",
-	'APIException:MethodCallNotImplemented' => "Method call '%s' has not been implemented.",
-	'APIException:FunctionDoesNotExist' => "Function for method '%s' is not callable",
-	'APIException:AlgorithmNotSupported' => "Algorithm '%s' is not supported or has been disabled.",
-	'ConfigurationException:CacheDirNotSet' => "Cache directory 'cache_path' not set.",
-	'APIException:NotGetOrPost' => "Request method must be GET or POST",
-	'APIException:MissingAPIKey' => "Missing API key",
-	'APIException:BadAPIKey' => "Bad API key",
-	'APIException:MissingHmac' => "Missing X-Elgg-hmac header",
-	'APIException:MissingHmacAlgo' => "Missing X-Elgg-hmac-algo header",
-	'APIException:MissingTime' => "Missing X-Elgg-time header",
-	'APIException:MissingNonce' => "Missing X-Elgg-nonce header",
-	'APIException:TemporalDrift' => "X-Elgg-time is too far in the past or future. Epoch fail.",
-	'APIException:NoQueryString' => "No data on the query string",
-	'APIException:MissingPOSTHash' => "Missing X-Elgg-posthash header",
-	'APIException:MissingPOSTAlgo' => "Missing X-Elgg-posthash_algo header",
-	'APIException:MissingContentType' => "Missing content type for post data",
-	'SecurityException:InvalidPostHash' => "POST data hash is invalid - Expected %s but got %s.",
-	'SecurityException:DupePacket' => "Packet signature already seen.",
-	'SecurityException:InvalidAPIKey' => "Invalid or missing API Key.",
-	'NotImplementedException:CallMethodNotImplemented' => "Call method '%s' is currently not supported.",
-
-	'NotImplementedException:XMLRPCMethodNotImplemented' => "XML-RPC method call '%s' not implemented.",
-	'InvalidParameterException:UnexpectedReturnFormat' => "Call to method '%s' returned an unexpected result.",
-	'CallException:NotRPCCall' => "Call does not appear to be a valid XML-RPC call",
-
-	'PluginException:NoPluginName' => "The plugin name could not be found",
-
-	'SecurityException:authenticationfailed' => "User could not be authenticated",
-
-	'CronException:unknownperiod' => '%s is not a recognised period.',
-
-	'SecurityException:deletedisablecurrentsite' => 'You can not delete or disable the site you are currently viewing!',
 
 	'RegistrationException:EmptyPassword' => 'Salasanakenttä ei voi olla tyhjä',
 	'RegistrationException:PasswordMismatch' => 'Salasanojen on täsmättävä',
@@ -236,17 +104,15 @@ $finnish = array(
 	'pageownerunavailable' => 'Varoitus: Sivun omistajaa %d ei pystytä näyttämään!',
 	'viewfailure' => 'Näkymässä %s ilmeni sisäinen virhe.',
 	'changebookmark' => 'Kirjanmerkin polku on vanhentunut. Ole hyvä ja vaihda kirjanmerkkisi tälle sivulle',
-	'noaccess' => 'Kohde, johon koitit päästä käsiksi, vaatii kirjautumisen, on poistettu tai sinulla ei ole oikeuksia sen tarkastelemiseen.',
+	'noaccess' => 'Kohde on poistettu tai sinulla ei ole oikeuksia sen tarkastelemiseen.',
 	'error:missing_data' => 'Pyynnössäsi oli puutteellisia tietoja',
+	'save:fail' => 'Tallentaminen epäonnistui',
+	'save:success' => 'Tiedot tallennettu',
 
-	'error:default' => 'Hups... jotain meni pieleen.',
-	'error:404' => 'Hakemaasi sivua ei löydy.',
-
-/**
- * API
- */
-	'system.api.list' => "List all available API calls on the system.",
-	'auth.gettoken' => "This API call lets a user obtain a user authentication token which can be used for authenticating future API calls. Pass it as the parameter auth_token",
+	'error:default:title' => 'Hups...',
+	'error:default:content' => 'Hups... jotain meni pieleen.',
+	'error:404:title' => 'Sivua ei löydy',
+	'error:404:content' => 'Hakemaasi sivua ei löydy.',
 
 /**
  * User details
@@ -267,10 +133,15 @@ $finnish = array(
 	'PRIVATE' => "Yksityinen",
 	'LOGGED_IN' => "Kirjautuneet",
 	'PUBLIC' => "Julkinen",
+	'LOGGED_OUT' => "Kirjautumattomat käyttäjät",
 	'access:friends:label' => "Ystävät",
 	'access' => "Pääsy",
+	'access:overridenotice' => "Huom: Vain ryhmän jäsenillä on pääsy tähän ryhmään lisättyihin sisältöihin.",
 	'access:limited:label' => "Rajoitettu",
 	'access:help' => "Pääsytaso",
+	'access:read' => "Lukuoikeus",
+	'access:write' => "Kirjoitusoikeus",
+	'access:admin_only' => "Vain ylläpitäjät",
 
 /**
  * Dashboard and widgets
@@ -440,8 +311,11 @@ $finnish = array(
 	'river:ingroup' => 'ryhmässä %s',
 	'river:none' => 'Ei uutta toimintaa',
 	'river:update' => 'Päivitys kohteelle %s',
+	'river:delete' => 'Poista tämä kohde listasta',
 	'river:delete:success' => 'Kohde poistettu',
 	'river:delete:fail' => 'Kohteen poistaminen epäonnistui',
+	'river:subject:invalid_subject' => 'Virheellinen käyttäjä',
+	'activity:owner' => 'Näytä toiminta',
 
 	'river:widget:title' => "Toimintalista",
 	'river:widget:description' => "Näytä viimeisin toiminta",
@@ -453,14 +327,14 @@ $finnish = array(
  * Notifications
  */
 	'notifications:usersettings' => "Ilmoitusasetukset",
-	'notifications:methods' => "Määritä käytettävät ilmoitustavat.",
 	'notification:method:email' => 'Sähköposti',
 
-	'notifications:usersettings:save:ok' => "Ilmoitusasetuksesi tallennettiin onnistuneesti.",
-	'notifications:usersettings:save:fail' => "Ilmoitusasetustesi tallentaminen epäonnistui.",
+	'notifications:usersettings:save:ok' => "Ilmoitusasetukset tallennettu.",
+	'notifications:usersettings:save:fail' => "Ilmoitusasetusten tallentaminen epäonnistui.",
 
-	'user.notification.get' => 'Return the notification settings for a given user.',
-	'user.notification.set' => 'Set the notification settings for a given user.',
+	'notification:subject' => 'Ilmoitus kohteesta %s',
+	'notification:body' => 'Pääset tarkastelemaan kohdetta tästä: %s',
+
 /**
  * Search
  */
@@ -474,9 +348,9 @@ $finnish = array(
 	'next' => "Seuraava",
 	'previous' => "Edellinen",
 
-	'viewtype:change' => "Change list type",
-	'viewtype:list' => "List view",
-	'viewtype:gallery' => "Gallery",
+	'viewtype:change' => "Vaihda listatyyppi",
+	'viewtype:list' => "Listanäkymä",
+	'viewtype:gallery' => "Gallerianäkymä",
 
 	'tag:search:startblurb' => "Kohteet, joiden täsmäävät tagiin '%s':",
 
@@ -519,14 +393,14 @@ $finnish = array(
 	'adduser:bad' => "Uuden käyttäjän luonti epäonnistui.",
 
 	'user:set:name' => "Tilin nimiasetukset",
-	'user:name:label' => "Nimesi",
-	'user:name:success' => "Nimesi vaihdettiin.",
-	'user:name:fail' => "Nimesi vaihtaminen epäonnistui. Varmista, että nimesi ei ole liian pitkä ja yritä uudelleen.",
+	'user:name:label' => "Nimi",
+	'user:name:success' => "Nimi vaihdettu.",
+	'user:name:fail' => "Nimen vaihtaminen epäonnistui.",
 
 	'user:set:password' => "Tilin salasana",
 	'user:current_password:label' => 'Nykyinen salasana',
-	'user:password:label' => "Uusi salasanasi",
-	'user:password2:label' => "Uusi salasanasi uudelleen",
+	'user:password:label' => "Uusi salasana",
+	'user:password2:label' => "Uusi salasana uudelleen",
 	'user:password:success' => "Salasana vaihdettu",
 	'user:password:fail' => "Salasanan vaihtaminen epäonnistui.",
 	'user:password:fail:notsame' => "Salasanat eivät täsmää!",
@@ -537,8 +411,8 @@ $finnish = array(
 
 	'user:set:language' => "Kieliasetukset",
 	'user:language:label' => "Kieli",
-	'user:language:success' => "Kieliasetuksesi on päivitetty.",
-	'user:language:fail' => "Kieliasetustesi tallentaminen epäonnistui.",
+	'user:language:success' => "Kieliasetus päivitetty.",
+	'user:language:fail' => "Kieliasetuksen tallentaminen epäonnistui.",
 
 	'user:username:notfound' => 'Käyttäjätunnusta %s ei löytynyt.',
 
@@ -576,10 +450,17 @@ $finnish = array(
 	'admin:statistics' => "Tilastotiedot",
 	'admin:statistics:overview' => 'Yhteenveto',
 	'admin:statistics:server' => 'Palvelimen tiedot',
+	'admin:statistics:cron' => 'Cron',
+	'admin:cron:record' => 'Viimeisimmät Cron-ajot',
+	'admin:cron:period' => 'Cron-aikaväli',
+	'admin:cron:friendly' => 'Suoritettu viimeksi',
+	'admin:cron:date' => 'Päivä ja aika',
 
 	'admin:appearance' => 'Ulkoasu',
 	'admin:administer_utilities' => 'Apuohjelmat',
 	'admin:develop_utilities' => 'Apuohjelmat',
+	'admin:configure_utilities' => 'Apuohjelmat',
+	'admin:configure_utilities:robots' => 'Robots.txt',
 
 	'admin:users' => "Käyttäjät",
 	'admin:users:online' => 'Tällä hetkellä kirjautuneena',
@@ -592,18 +473,22 @@ $finnish = array(
 	'admin:users:opt:description' => "Säädä käyttäjä ja tiliasetuksia. ",
 	'admin:users:find' => 'Etsi',
 
+	'admin:administer_utilities:maintenance' => 'Ylläpitotila',
+
 	'admin:settings' => 'Asetukset',
 	'admin:settings:basic' => 'Perusasetukset',
 	'admin:settings:advanced' => 'Lisäasetukset',
 	'admin:site:description' => "Tämän hallintapaneelin avulla voit vaikuttaa sivustosi yleisiin asetuksiin. Valitse vaihtoehto alta aloittaaksesi.",
 	'admin:site:opt:linktext' => "Hallinnoi sivuston asetuksia...",
-	'admin:site:access:warning' => "Pääsyasetuksen muuttaminen vaikuttaa vain tulevaisuudessa luotaviin sisältöihin.",
+	'admin:settings:in_settings_file' => 'Tämä asetus on määritetty asetustiedostossa (settings.php)',
 
 	'admin:dashboard' => 'Kojelauta',
 	'admin:widget:online_users' => 'Kirjautuneet käyttäjät',
 	'admin:widget:online_users:help' => 'Listaa kirjautuneet käyttäjät',
 	'admin:widget:new_users' => 'Uudet käyttäjät',
 	'admin:widget:new_users:help' => 'Listaa uusimmat käyttäjät',
+	'admin:widget:banned_users' => 'Bannatut käyttäjät',
+	'admin:widget:banned_users:help' => 'Listaa bannatut käyttäjät',
 	'admin:widget:content_stats' => 'Sisältötilastot',
 	'admin:widget:content_stats:help' => 'Näyttää sivustolle luotujen sisältöjen määrän',
 	'widget:content_stats:type' => 'Sisältötyyppi',
@@ -615,8 +500,8 @@ $finnish = array(
 'Tervetuloa Elggiin! Olet juuri nyt ylläpitäjän kojelaudalla, joka on kätevä työkalu sivuston toiminnan seuraamiseen.',
 
 	'admin:widget:admin_welcome:admin_overview' =>
-"Ylläpitopuolen navigaatio löytyy oikella olevasta valikosta. Se on jaettu"
-. " kolmeen osioon:
+"Ylläpitopuolen navigaatio löytyy oikella olevasta valikosta. Se on jaettu
+kolmeen osioon:
 	<dl>
 		<dt>Hallinnointi</dt><dd>Käteviä toimintoja kuten listaukset tilastotiedoista, kirjautuneista käyttäjistä sekä sopimattomaksi raportoidusta sisällöstä.</dd>
 		<dt>Asetukset</dt><dd>Toiminnot kuten sivuston nimen muuttaminen ja uusien liitännäisten lisääminen.</dd>
@@ -638,10 +523,10 @@ $finnish = array(
 	'admin:footer:community_forums' => 'Elgg-yhteisön keskustelualue',
 	'admin:footer:blog' => 'Elgg Blog',
 
-	'admin:plugins:category:all' => 'All plugins',
-	'admin:plugins:category:active' => 'Active plugins',
-	'admin:plugins:category:inactive' => 'Inactive plugins',
-	'admin:plugins:category:admin' => 'Admin',
+	'admin:plugins:category:all' => 'Kaikki',
+	'admin:plugins:category:active' => 'Aktiiviset',
+	'admin:plugins:category:inactive' => 'Inaktiiviset',
+	'admin:plugins:category:admin' => 'Ylläpito',
 	'admin:plugins:category:bundled' => 'Bundled',
 	'admin:plugins:category:nonbundled' => 'Non-bundled',
 	'admin:plugins:category:content' => 'Content',
@@ -663,16 +548,15 @@ $finnish = array(
 	'admin:plugins:markdown:unknown_plugin' => 'Unknown plugin.',
 	'admin:plugins:markdown:unknown_file' => 'Unknown file.',
 
-
-	'admin:notices:could_not_delete' => 'Could not delete notice.',
-	'item:object:admin_notice' => 'Admin notice',
+	'admin:notices:could_not_delete' => 'Ilmoituksen poistaminen epäonnistui.',
+	'item:object:admin_notice' => 'Ylläpidon ilmoitus',
 
 	'admin:options' => 'Hallintavalikko',
-
 
 /**
  * Plugins
  */
+
 	'plugins:disabled' => 'Liitännäiset ovat poissa käytöstä, sillä mod-hakemistossa on "disabled"-niminen tiedosto.',
 	'plugins:settings:save:ok' => "Päivitettiin asetukset liitännäiselle %s.",
 	'plugins:settings:save:fail' => "Asetusten päivittäminen liitännäiselle %s epäonnistui.",
@@ -680,11 +564,11 @@ $finnish = array(
 	'plugins:usersettings:save:fail' => "Käyttöasetusten päivittäminen liitännäiselle %s epäonnistui.",
 	'item:object:plugin' => 'Liitännäiset',
 
-	'admin:plugins' => "Plugins",
-	'admin:plugins:activate_all' => 'Activate All',
-	'admin:plugins:deactivate_all' => 'Deactivate All',
-	'admin:plugins:activate' => 'Activate',
-	'admin:plugins:deactivate' => 'Deactivate',
+	'admin:plugins' => "Liitännäiset",
+	'admin:plugins:activate_all' => 'Aktivoi kaikki',
+	'admin:plugins:deactivate_all' => 'Deaktivoi kaikki',
+	'admin:plugins:activate' => 'Aktivoi',
+	'admin:plugins:deactivate' => 'Deaktivoi',
 	'admin:plugins:description' => "This admin panel allows you to control and configure tools installed on your site.",
 	'admin:plugins:opt:linktext' => "Configure tools...",
 	'admin:plugins:opt:description' => "Configure the tools installed on the site. ",
@@ -699,6 +583,12 @@ $finnish = array(
 	'admin:plugins:label:moreinfo' => 'more info',
 	'admin:plugins:label:version' => 'Version',
 	'admin:plugins:label:location' => 'Location',
+	'admin:plugins:label:contributors' => 'Contributors',
+	'admin:plugins:label:contributors:name' => 'Name',
+	'admin:plugins:label:contributors:email' => 'E-mail',
+	'admin:plugins:label:contributors:website' => 'Website',
+	'admin:plugins:label:contributors:username' => 'Community username',
+	'admin:plugins:label:contributors:description' => 'Description',
 	'admin:plugins:label:dependencies' => 'Dependencies',
 
 	'admin:plugins:warning:elgg_version_unknown' => 'This plugin uses a legacy manifest file and does not specify a compatible Elgg version. It probably will not work!',
@@ -729,8 +619,8 @@ $finnish = array(
 	'admin:plugins:dependencies:local_value' => 'Sivustolla käytössä',
 	'admin:plugins:dependencies:comment' => 'Tulos',
 
-	'admin:statistics:description' => "This is an overview of statistics on your site. If you need more detailed statistics, a professional administration feature is available.",
-	'admin:statistics:opt:description' => "View statistical information about users and objects on your site.",
+	'admin:statistics:description' => "Tämä näyttää tilastoja sivustostasi. Tarkempien tietojen selvittämiseen voit käyttää erillistä hallintatyökalua.",
+	'admin:statistics:opt:description' => "Näyttää tilastoja sivustosi käyttäjistä ja sisällöistä.",
 	'admin:statistics:opt:linktext' => "View statistics...",
 	'admin:statistics:label:basic' => "Sivuston perustilastot",
 	'admin:statistics:label:numentities' => "Sivustolla olevat kohteet",
@@ -759,11 +649,11 @@ $finnish = array(
 	'admin:user:label:search' => "Find users:",
 	'admin:user:label:searchbutton' => "Search",
 
-	'admin:user:ban:no' => "Can not ban user",
-	'admin:user:ban:yes' => "User banned.",
-	'admin:user:self:ban:no' => "You cannot ban yourself",
-	'admin:user:unban:no' => "Can not unban user",
-	'admin:user:unban:yes' => "User unbanned.",
+	'admin:user:ban:no' => "Käyttäjän bannaaminen epäonnistui",
+	'admin:user:ban:yes' => "Käyttäjä bannattu.",
+	'admin:user:self:ban:no' => "Et voi bannata itseäsi",
+	'admin:user:unban:no' => "Bannin peruminen epäonnistui",
+	'admin:user:unban:yes' => "Peruttiin bannaus.",
 	'admin:user:delete:no' => "Käyttäjää ei voida poistaa",
 	'admin:user:delete:yes' => "Käyttäjä %s poistettiin",
 	'admin:user:self:delete:no' => "Et voi poistaa omaa tilisäsi",
@@ -788,19 +678,33 @@ $finnish = array(
 
 	'admin:appearance:default_widgets' => 'Oletusvimpaimet',
 	'admin:default_widgets:unknown_type' => 'Tuntematon vimpaintyyppi',
-	'admin:default_widgets:instructions' => 'Lisää, poista, asettele ja konfiguroi oletusvimpaimet valitulle vimpainsivulle.'
-		. '  Nämä muutokset vaikuttavat vain sivuston uusiin jäseniin.',
+	'admin:default_widgets:instructions' => 'Lisää, poista, asettele ja konfiguroi oletusvimpaimet valitulle vimpainsivulle.
+Nämä muutokset vaikuttavat vain sivuston uusiin jäseniin.',
+
+	'admin:robots.txt:instructions' => "Muokkaa sivuston robots.txt-tiedostoa",
+	'admin:robots.txt:plugins' => "Liitännäisten robots.txt-tiedostoon lisäämät säännöt:",
+	'admin:robots.txt:subdir' => "Tämä robots.txt-työkalu ei toimi, koska Elgg on asennettu alihakemistoon",
+
+	'admin:maintenance_mode:default_message' => 'Sivusto on väliaikaisesti poissa käytöstä huoltokatkoksen vuoksi',
+	'admin:maintenance_mode:instructions' => 'Huoltotilaa tulisi käyttää päivitysten ja muiden laajojen muutosten aikana.
+		Huoltotilan ollessa päällä, vain ylläpitäjät pääsevät kirjautumaan sivustolle.',
+	'admin:maintenance_mode:mode_label' => 'Ylläpitotila',
+	'admin:maintenance_mode:message_label' => 'Käyttäjille näytettävä viesti',
+	'admin:maintenance_mode:saved' => 'Huoltotilan asetukset tallennettu',
+	'admin:maintenance_mode:indicator_menu_item' => 'Sivuston on huoltotilassa.',
+	'admin:login' => 'Ylläpitäjien kirjautuminen',
 
 /**
  * User settings
  */
-	'usersettings:description' => 'Käyttäjäasetuksista voit määritellä kaikki henkilökohtaiset asetuksesi. Valitse vaihtoehto alapuolelta aloittaaksesi.',
 
-	'usersettings:statistics' => 'Tilastotietosi',
+	'usersettings:description' => "Käyttäjäasetuksista voit määritellä kaikki henkilökohtaiset asetuksesi. Valitse vaihtoehto alapuolelta aloittaaksesi.",
+
+	'usersettings:statistics' => "Tilastotietosi",
 	'usersettings:statistics:opt:description' => 'Katsele tilastotietoja käyttäjistä ja sivuston objekteista.',
 	'usersettings:statistics:opt:linktext' => 'Tilin tilastotiedot',
 
-	'usersettings:user' => 'Asetuksesi',
+	'usersettings:user' => "Käyttäjän %s asetukset",
 	'usersettings:user:opt:description' => 'Voit muuttaa käyttäjäkohtaisia asetuksia.',
 	'usersettings:user:opt:linktext' => 'Muuta asetuksiasi',
 
@@ -820,8 +724,10 @@ $finnish = array(
 /**
  * Activity river
  */
+
 	'river:all' => 'Kaikki sivuston toiminta',
 	'river:mine' => 'Oma toimintani',
+	'river:owner' => 'Käyttäjän %s toiminta',
 	'river:friends' => 'Ystävien toiminta',
 	'river:select' => 'Näytä %s',
 	'river:comments:more' => '+%u lisää',
@@ -832,6 +738,18 @@ $finnish = array(
 	'friends:icon_size' => "Kuvakkeen koko",
 	'friends:tiny' => "pikkuruinen",
 	'friends:small' => "pieni",
+
+/**
+ * Icons
+ */
+
+	'icon:size' => "Ikonin koko",
+	'icon:size:topbar' => "Yläpalkki",
+	'icon:size:tiny' => "Pikkuruinen",
+	'icon:size:small' => "Pieni",
+	'icon:size:medium' => "Keskikokoinen",
+	'icon:size:large' => "Suuri",
+	'icon:size:master' => "Erittäin suuri",
 
 /**
  * Generic action words
@@ -847,8 +765,16 @@ $finnish = array(
 	'edit' => "Muokkaa",
 	'delete' => "Poista",
 	'accept' => "Hyväksy",
+	'reject' => "Hylkää",
+	'decline' => "Kieltäydy",
+	'approve' => "Hyväksy",
+	'activate' => "Aktivoi",
+	'deactivate' => "Deaktivoi",
+	'disapprove' => "Hylkää",
+	'revoke' => "Kumoa",
 	'load' => "Lataa",
 	'upload' => "Lähetä",
+	'download' => "Lataa",
 	'ban' => "Bannaa",
 	'unban' => "Poista bannaus",
 	'banned' => "Bannattu",
@@ -858,16 +784,19 @@ $finnish = array(
 	'complete' => "Complete",
 	'open' => 'Avaa',
 	'close' => 'Sulje',
+	'hide' => 'Piilota',
+	'show' => 'Näytä',
 	'reply' => "Vastaa",
 	'more' => 'Lisää',
+	'more_info' => 'Lisätietoja	',
 	'comments' => 'Kommentit',
 	'import' => 'Importtaa',
 	'export' => 'Exporttaa',
-	'untitled' => 'Untitled',
-	'help' => 'Help',
+	'untitled' => 'Nimeton',
+	'help' => 'Ohje',
 	'send' => 'Lähetä',
 	'post' => 'Lähetä',
-	'submit' => 'Submit',
+	'submit' => 'Tallenna',
 	'comment' => 'Kommentoi',
 	'upgrade' => 'Päivitä Elgg',
 	'sort' => 'Järjestä',
@@ -881,12 +810,15 @@ $finnish = array(
 	'site' => 'Sivusto',
 	'activity' => 'Toiminta',
 	'members' => 'Jäsenet',
+	'menu' => 'Valikko',
 
 	'up' => 'Ylös',
 	'down' => 'Alas',
 	'top' => 'Ylimmäiseksi',
 	'bottom' => 'Alimmaiseksi',
 	'back' => 'Takaisin',
+	'right' => 'Oikealle',
+	'left' => 'Vasemmalle',
 
 	'invite' => "Kutsu",
 
@@ -898,9 +830,18 @@ $finnish = array(
 	'option:no' => "Ei",
 
 	'unknown' => 'Tuntematon',
+	'never' => 'Ei koskaan',
 
 	'active' => 'Aktiivista',
 	'total' => 'Yhteensä',
+
+	'ok' => 'OK',
+	'any' => 'Mikä tahansa',
+	'error' => 'Virhe',
+
+	'other' => 'Muu',
+	'options' => 'Options',
+	'advanced' => 'Advanced',
 
 	'learnmore' => "Klikkaa tästä lukeaksesi lisää.",
 	'unknown_error' => 'Tuntematon virhe',
@@ -910,11 +851,34 @@ $finnish = array(
 	'content:latest:blurb' => 'Alternatively, click here to view the latest content from across the site.',
 
 	'link:text' => 'view link',
+
 /**
  * Generic questions
  */
 
 	'question:areyousure' => 'Oletko varma?',
+
+/**
+ * Status
+ */
+
+	'status' => 'Tila',
+	'status:unsaved_draft' => 'Tallentamaton luonnos',
+	'status:draft' => 'Luonnos',
+	'status:unpublished' => 'Julkaisematon',
+	'status:published' => 'Julkaistu',
+	'status:featured' => 'Featured',
+	'status:open' => 'Avoin',
+	'status:closed' => 'Suljettu',
+
+/**
+ * Generic sorts
+ */
+
+	'sort:newest' => 'Uusimmat',
+	'sort:popular' => 'Suosituimmat',
+	'sort:alpha' => 'Aakkosjärjestys',
+	'sort:priority' => 'Tärkeysjärjestys',
 
 /**
  * Generic data words
@@ -942,6 +906,7 @@ $finnish = array(
 /**
  * Entity actions
  */
+
 	'edit:this' => 'Muokkaa',
 	'delete:this' => 'Poista',
 	'comment:this' => 'Kommentoi',
@@ -976,7 +941,7 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 
 /**
  * System messages
- **/
+ */
 
 	'systemmessages:dismiss' => "click to dismiss",
 
@@ -984,6 +949,7 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 /**
  * Import / export
  */
+
 	'importsuccess' => "Import of data was successful",
 	'importfail' => "OpenDD import of data failed.",
 
@@ -1000,6 +966,13 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 	'friendlytime:days:singular' => "eilen",
 	'friendlytime:date_format' => 'j F Y @ g:ia',
 
+	'friendlytime:future:minutes' => "%s minuutin kuluttua",
+	'friendlytime:future:minutes:singular' => "minuutin kuluttua",
+	'friendlytime:future:hours' => "%s tunnin kuluttua",
+	'friendlytime:future:hours:singular' => "tunnin kuluttua",
+	'friendlytime:future:days' => "%s päivän kuluttua",
+	'friendlytime:future:days:singular' => "huomenna",
+
 	'date:month:01' => '%s tammikuu',
 	'date:month:02' => '%s helmikuu',
 	'date:month:03' => '%s maaliskuu',
@@ -1013,6 +986,24 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 	'date:month:11' => '%s marraskuu',
 	'date:month:12' => '%s joulukuu',
 
+	'date:weekday:0' => 'Sunnuntai',
+	'date:weekday:1' => 'Maanantai',
+	'date:weekday:2' => 'Tiistai',
+	'date:weekday:3' => 'Keskiviikko',
+	'date:weekday:4' => 'Torstai',
+	'date:weekday:5' => 'Perjantai',
+	'date:weekday:6' => 'Lauantai',
+
+	'interval:minute' => 'Minuutin välein',
+	'interval:fiveminute' => 'Viiden minuutin välein',
+	'interval:fifteenmin' => 'Viidentoista minuutin välein',
+	'interval:halfhour' => 'Puolen tunnin välein',
+	'interval:hourly' => 'Tunnin välein',
+	'interval:daily' => 'Kerran päivässä',
+	'interval:weekly' => 'Viikoittain',
+	'interval:monthly' => 'Kuukausittain',
+	'interval:yearly' => 'Vuosittain',
+	'interval:reboot' => 'Uudelleenkäynnistyksen yhteydessä',
 
 /**
  * System settings
@@ -1026,16 +1017,18 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 	'installation:dataroot:warning' => "Sinun pitää luoda tämä hakemisto manuaalisesti. Sen tulee olla eri hakemistossa kuin Elgg-asennuksesi.",
 	'installation:sitepermissions' => "Oletusoikeudet:",
 	'installation:language' => "Sivuston oletuskieli:",
-	'installation:debug' => "Virheidenjäljitystila antaa tarkempaa tietoa järjestelmän virheistä, mikä helpottaa virheiden jäljittämistä ongelmatilanteissa. Sen käyttö kuitenkin hidastaa järjestelmää, joten sitä tulisi käyttää ainoastaan ongelmatilanteissa:",
+	'installation:debug' => "Määritä palvelimen lokiin tallennettavat tiedot.",
+	'installation:debug:label' => "Lokin tarkkuus:",
 	'installation:debug:none' => 'Ota virheenjäljitysmoodi pois käytöstä (suositus)',
-	'installation:debug:error' => 'Näytä vain kriittisen virheet',
-	'installation:debug:warning' => 'Näytä virheet ja varoitukset',
-	'installation:debug:notice' => 'Kirjaa palvelimen lokiin kaikki virheet, varoitukset ja huomautukset',
+	'installation:debug:error' => 'Kirjaa vain kriittiset virheet',
+	'installation:debug:warning' => 'Kirjaa virheet ja varoitukset',
+	'installation:debug:notice' => 'Kirjaa kaikki virheet, varoitukset ja huomautukset',
+	'installation:debug:info' => 'Kirjaa kaikki',
 
 	// Walled Garden support
 	'installation:registration:description' => 'Oletuksena sivustolle voi vapaasti rekisteröityä uusia käyttäjiä. Ota tämä pois päältä, jos et halua, että käyttäjät voivat rekisteröityä omatoimisesti.',
 	'installation:registration:label' => 'Salli käyttäjien vapaa rekisteröityminen',
-	'installation:walled_garden:description' => 'Rajoita sivuston näkyvyys yksityiseksi. Jos tämä on valittuna, rekisteröitymättömät käyttäjät voivat nähdä vain sisältöä, joka on erikseen määritetty julkiseksi.',
+	'installation:walled_garden:description' => 'Rajoita sivusto yksityiseksi. Rekisteröitymättömät käyttäjät voivat nähdä vain sisällöt, jotka on erikseen määritetty julkisiksi.',
 	'installation:walled_garden:label' => 'Rajoita sivusto vain kirjautuneille käyttäjille',
 
 	'installation:httpslogin' => "Pakota käyttäjät kirjautumaan käyttäen salattua yhteyttä. Tämä vaatii, että palvelimellesi on konfiguroitu HTTPS .",
@@ -1044,17 +1037,24 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 
 	'installation:siteemail' => "Site email address (used when sending system emails):",
 
-	'installation:disableapi' => "Elgg sisältää www-pohjaisen ohjelmointirajapinnan, jonka avulla ulkoiset sovellukset voivat olla vuorovaikutuksessa sivustosi kanssa.",
-	'installation:disableapi:label' => "Ota käyttöön Elggin ohjelmointirajapinta",
-
+	'admin:site:access:warning' => "Tämä määrittää oletusasetuksen, kun ollaan luomassa uutta sisältöä. Tämän asetuksen muuttaminen ei vaikuta jo olemassa oleviin sisältöihin.",
 	'installation:allow_user_default_access:description' => "Jos tämä on valittuna, käyttäjät voivat määrittää oman oletuspääsytasonsa, joka yliajaa järjestelmän oletustason.",
 	'installation:allow_user_default_access:label' => "Salli käyttäjille oma oletuspääsytaso",
 
 	'installation:simplecache:description' => "Yksinkertainen välimuisti nopeuttaa sivustoa tallentamalla muistiin staattista sisältöä kuten CSS ja JavaScript-tiedostoja.",
 	'installation:simplecache:label' => "Käytä yksinkertaista välimuistia (suositus)",
 
+	'installation:minify:description' => "Välimuisti voi parantaa suorituskykyä myös pakkamalla JavaScript- and CSS-tiedostot. (Tämä vaatii, että välimuisti on käytössä.)",
+	'installation:minify_js:label' => "Pakkaa JavaScript (suositus)",
+	'installation:minify_css:label' => "Pakkaa CSS (suositus)",
+
 	'installation:systemcache:description' => "Välimuisti vähentää liitännäisten latausaikaa tallentamalla muistiin niiden käytössä olevien näkymien sijainnit.",
 	'installation:systemcache:label' => "Käytä välimuistia (suositus)",
+
+	'admin:legend:caching' => 'Välimuisti',
+	'admin:legend:content_access' => 'Pääsy sisältöihin',
+	'admin:legend:site_access' => 'Pääsy sivustolle',
+	'admin:legend:debug' => 'Lokit ja virheidenjäljitys',
 
 	'upgrading' => 'Upgrading...',
 	'upgrade:db' => 'Your database was upgraded.',
@@ -1090,6 +1090,12 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 /**
  * Emails
  */
+
+	'email:from' => 'From',
+	'email:to' => 'To',
+	'email:subject' => 'Otsikko',
+	'email:body' => 'Viesti',
+
 	'email:settings' => "Sähköpostiasetukset",
 	'email:address:label' => "Sähköpostiosoite",
 
@@ -1130,12 +1136,7 @@ Jos teit anomuksen, klikkaa alla olevaa linkkiä. Muussa tapauksessa jätä täm
 	'default_access:settings' => "Oletuspääsyoikeudet",
 	'default_access:label' => "Oletuspääsyoikeus",
 	'user:default_access:success' => "Uusi oletusoikeustasosi tallennettu.",
-	'user:default_access:failure' => "Oletusoikeuksien tallentaminen epäonnistui.",
-
-/**
- * XML-RPC
- */
-	'xmlrpc:noinputdata'	=>	"Input data missing",
+	'user:default_access:failure' => "Oletusoikeuden tallentaminen epäonnistui.",
 
 /**
  * Comments
@@ -1179,6 +1180,7 @@ Tähän viestiin ei voi vastata.",
 /**
  * Entities
  */
+
 	'byline' => 'Käyttäjältä %s',
 	'entity:default:strapline' => 'Created %s by %s',
 	'entity:default:missingsupport:popup' => 'Tätä kohdetta ei voida näyttää oikein. Tämä voi johtua puuttuvasta liitännäisestä.',
@@ -1186,10 +1188,10 @@ Tähän viestiin ei voi vastata.",
 	'entity:delete:success' => 'Kohde %s on poistettu',
 	'entity:delete:fail' => 'Kohteen %s poistaminen epäonnistui',
 
-
 /**
  * Action gatekeeper
  */
+
 	'actiongatekeeper:missingfields' => 'Lomakkeesta puuttuu __token tai __ts -kentät',
 	'actiongatekeeper:tokeninvalid' => "Käyttämäsi sivu oli vanhentunut. Yritä uudelleen.",
 	'actiongatekeeper:timeerror' => 'Käyttämäsi sivu on vanhentunut. Päivitä sivu ja yritä uudelleen.',
@@ -1197,10 +1199,10 @@ Tähän viestiin ei voi vastata.",
 	'actiongatekeeper:uploadexceeded' => 'Lähettämäsi datan koko ylittää sivuston ylläpitäjän määrittämän maksimirajan',
 	'actiongatekeeper:crosssitelogin' => "Eri domainista kirjautuminen ei ole sallittua. Yritä uudelleen.",
 
-
 /**
  * Word blacklists
  */
+
 	'word:blacklist' => 'ja, silloin, mutta, hän, hänen, yksi, ei, myös, noin, nyt, sillä, silti, yhä, niin ikään, muutoin, sen takia, päinvastoin, mieluummin, näin ollen, lisäksi, joka tapauksessa, sijaan, sillä aikaa, sen mukaisesti, tämä, näyttää, mikä, jonka, kuka tahansa, ketä tahansa',
 
 /**
@@ -1216,10 +1218,17 @@ Tähän viestiin ei voi vastata.",
 
 	'js:security:token_refresh_failed' => 'Yhteyden saaminen osoitteeseen %s epäonnistui. Kohteiden tallentamisessa saattaa ilmetä ongelmia. Ole hyvä ja päivitä sivu.',
 	'js:security:token_refreshed' => 'Yhteys osoitteeseen %s palautettu!',
+	'js:lightbox:current' => "%s/%s",
+
+/**
+ * Miscellaneous
+ */
+	'elgg:powered' => "Powered by Elgg",
 
 /**
  * Languages according to ISO 639-1
  */
+
 	"aa" => "Afar",
 	"ab" => "Abkhazian",
 	"af" => "Afrikaans",
@@ -1364,5 +1373,3 @@ Tähän viestiin ei voi vastata.",
 	"zh" => "Chinese",
 	"zu" => "Zulu",
 );
-
-add_translation("fi", $finnish);
