@@ -541,10 +541,6 @@ kolmeen osioon:
 	'admin:plugins:category:widget' => 'Widgets',
 	'admin:plugins:category:utility' => 'Apuohjelmat',
 
-	'admin:plugins:sort:priority' => 'Priority',
-	'admin:plugins:sort:alpha' => 'Alphabetical',
-	'admin:plugins:sort:date' => 'Newest',
-
 	'admin:plugins:markdown:unknown_plugin' => 'Unknown plugin.',
 	'admin:plugins:markdown:unknown_file' => 'Unknown file.',
 
@@ -1080,6 +1076,17 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 
 	'deprecated:function' => '%s() was deprecated by %s()',
 
+	'admin:upgrades' => 'Päivitykset',
+
+	'upgrade:comments:status' => 'Sivustolla pitää päivittää <b>%s</b> kommenttia.',
+	'upgrade:comments:warning' => '<b>Varoitus:</b> päivitys saattaa kestää huomattavan kauan, jos sivustolla on paljon sisältöä!',
+	'upgrade:comments:success_count' => 'Päivityt kommentit:',
+	'upgrade:comments:error_count' => 'Virheet:',
+	'admin:upgrades:comments' => 'Kommenttien päivitys',
+	'upgrade:comments:river_update_failed' => 'Ei voitu päivittää kommenttia (id %s) sivuston toimintalistaukseen',
+	'upgrade:comments:create_failed' => 'Kommentin (id %s) päivittäminen epäonnistui.',
+	'upgrade:comments:finished' => 'Päivitys on valmis',
+
 /**
  * Welcome
  */
@@ -1143,6 +1150,7 @@ Jos teit anomuksen, klikkaa alla olevaa linkkiä. Muussa tapauksessa jätä täm
  */
 
 	'comments:count' => "%s kommenttia",
+	'item:object:comment' => 'Kommentit',
 
 	'river:comment:object:default' => '%s kommentoi kohdetta %s',
 
@@ -1159,6 +1167,7 @@ Jos teit anomuksen, klikkaa alla olevaa linkkiä. Muussa tapauksessa jätä täm
 	'generic_comment:none' => 'Ei kommentteja',
 	'generic_comment:title' => 'Kommentti käyttäjältä %s',
 	'generic_comment:on' => '%s kohteessa %s',
+	'generic_comments:latest:posted' => 'posted a',
 
 	'generic_comment:email:subject' => 'Sinulla on uusi kommentti!',
 	'generic_comment:email:body' => "Kohdettasi \"%s\" on kommentoinut %s. Siinä sanotaan
