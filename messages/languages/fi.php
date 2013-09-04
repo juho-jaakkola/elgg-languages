@@ -1,7 +1,7 @@
 <?php
 /**
 * Elgg send a message action page
-* 
+*
 * @package ElggMessages
 */
 
@@ -11,28 +11,23 @@ return array(
 	*/
 
 	'messages' => "Viestit",
+	'messages:unreadcount' => "%s lukematonta",
 	'messages:back' => "takaisin viesteihin",
 	'messages:user' => "käyttäjän %s viestit",
 	'messages:posttitle' => "%s's messages: %s",
 	'messages:inbox' => "Saapuneet",
-	'messages:send' => "Lähetä",
 	'messages:sent' => "Lähetetyt",
 	'messages:message' => "Viesti",
 	'messages:title' => "Aihe",
-	'messages:to' => "Vastaanottaja",
 	'messages:to:help' => "Kirjoita vastaanottajan nimi.",
-	'messages:from' => "Lähettäjä",
-	'messages:fly' => "Lähetä",
 	'messages:replying' => "Message replying to",
 	'messages:inbox' => "Saapuneet",
 	'messages:sendmessage' => "Lähetä viesti",
-	'messages:compose' => "Kirjoita uusi viesti",
 	'messages:add' => "Kirjoita uusi viesti",
 	'messages:sentmessages' => "Lähetetyt",
 	'messages:recent' => "Viimeisimmät viestit",
 	'messages:original' => "Alkuperäinen viesti",
 	'messages:yours' => "Sinun viestisi",
-	'messages:answer' => "Vastaa",
 	'messages:toggle' => 'Valitse kaikki',
 	'messages:markread' => 'Merkitse luetuksi',
 	'messages:recipient' => 'Choose a recipient&hellip;',

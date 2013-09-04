@@ -30,9 +30,6 @@ return array(
 	'file:add' => 'Lisää uusi tiedosto',
 
 	'file:file' => "Tiedosto",
-	'file:title' => "Otsikko",
-	'file:desc' => "Kuvaus",
-	'file:tags' => "Tagit",
 
 	'file:list:list' => 'Vaihta listanäkymään',
 	'file:list:gallery' => 'Vaihda gallerianäkymään',
@@ -64,8 +61,6 @@ return array(
 
 	'groups:enablefiles' => 'Ota käyttöön ryhmän tiedostot',
 
-	'file:download' => "Lataa tämä",
-
 	'file:delete:confirm' => "Haluatko varmasti poistaa tämän tiedoston?",
 
 	'file:tagcloud' => "Tagipilvi",
@@ -89,28 +84,21 @@ Voit nähdä tiedoston täällä:
 ',
 
 	/**
-	 * Embed media
-	 **/
-
-		'file:embed' => "Upota sisältöä",
-		'file:embedall' => "Kaikki",
-
-	/**
 	 * Status messages
 	 */
 
-		'file:saved' => "Tiedosto tallennettu.",
-		'file:deleted' => "Tiedosto poistettu.",
+	'file:saved' => "Tiedosto tallennettu.",
+	'file:deleted' => "Tiedosto poistettu.",
 
 	/**
 	 * Error messages
 	 */
 
-		'file:none' => "Ei tiedostoja.",
-		'file:uploadfailed' => "Tiedoston tallentaminen epäonnistui.",
-		'file:downloadfailed' => "Tiedoston lataaminen epäonnistui.",
-		'file:deletefailed' => "Tiedoston poistaminen epäonnistui.",
-		'file:noaccess' => "Sinulla ei ole oikeuksia tämän tiedoston muuttamiseen",
-		'file:cannotload' => "Tiedoston lisäämisessä tapahtui virhe",
-		'file:nofile' => "Sinun pitää valita tiedosto",
+	'file:none' => "Ei tiedostoja.",
+	'file:uploadfailed' => "Tiedoston tallentaminen epäonnistui.",
+	'file:downloadfailed' => "Tiedoston lataaminen epäonnistui.",
+	'file:deletefailed' => "Tiedoston poistaminen epäonnistui.",
+	'file:noaccess' => "Sinulla ei ole oikeuksia tämän tiedoston muuttamiseen",
+	'file:cannotload' => "Tiedoston lisäämisessä tapahtui virhe",
+	'file:nofile' => "Sinun pitää valita tiedosto",
 );

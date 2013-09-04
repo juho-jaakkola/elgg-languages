@@ -9,7 +9,7 @@ return array(
 	'search:search_error' => 'Virhe',
 
 	'search:more' => 'Näytä lisää hakutuloksia (%skpl)',
-	
+
 	'search_types:tags' => 'Tagit',
 
 	'search_types:comments' => 'Kommentit',

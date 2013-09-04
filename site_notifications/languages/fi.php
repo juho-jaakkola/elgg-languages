@@ -8,10 +8,8 @@ return array(
 	'notification:method:site' => 'Ilmoitukset',
 	'site_notifications:topbar' => 'Ilmoitukset',
 	'item:object:site_notification' => 'Ilmoitukset',
-	'site_notifications:view_all' => 'Näytä kaikki',
 
 	'site_notifications:no_access' => 'Sinulla ei ole oikeuksia tälle sivulle. Sinun pitää ehkä kirjautua sisään.',
 	'site_notifications:no_delete' => 'Poistaminen epäonnistui',
-	'site_notifications:cannot_set_read' => "Tämä ilmoitus on poistettu tai sinulla ei ole oikeuksia sen näkemiseen.",
 	'site_notifications:empty' => 'Ei ilmoituksia',
 );

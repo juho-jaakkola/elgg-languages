@@ -15,6 +15,5 @@ return array(
 	'embed:no_upload_content' => 'Ei ladattavaa sisältöä!',
 	'embed:no_section_content' => 'Kohteita ei löytynyt.',
 
-	'embed:no_sections' => 'No supported embed plugins found. Ask the site administrator to enabled a plugin with embed support.',
 	'embed:no_sections' => 'Upottamista tukevia liitännäisiä ei löytynyt. Pyydä sivuston ylläpitäjää ottamaan käyttöön liitännäisiä, jotka tukevat upottamista.',
 );

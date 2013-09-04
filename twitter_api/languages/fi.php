@@ -24,6 +24,7 @@ return array(
 	'twitter_api:usersettings:site_not_configured' => 'Sivuston ylläpitäjän pitää syöttää Twitteriin liittyvät asetukset ennen kuin sitä voidaan käyttää.',
 
 	'twitter_api:revoke:success' => 'Twitter-yhteys peruttu.',
+
 	'twitter_api:post_to_twitter' => "Lähetä tilapäivitykset Twitteriin?",
 
 	'twitter_api:login' => 'Salli kirjautuminen Twitter-tilin avulla?',

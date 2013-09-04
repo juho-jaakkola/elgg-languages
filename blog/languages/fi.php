@@ -26,13 +26,6 @@ return array(
 	'blog:excerpt' => 'Tiivistelmä',
 	'blog:body' => 'Viesti',
 	'blog:save_status' => 'Tallennettu viimeksi: ',
-	'blog:never' => 'Ei koskaan',
-
-	// Statuses
-	'blog:status' => 'Status',
-	'blog:status:draft' => 'Luonnos',
-	'blog:status:published' => 'Julkaistu',
-	'blog:status:unsaved_draft' => 'Tallentamaton luonnos',
 
 	'blog:revision' => 'Versio',
 	'blog:auto_saved_revision' => 'Versio  Auto Saved Revision',

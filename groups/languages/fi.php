@@ -50,6 +50,13 @@ return array(
 	'groups:widget:num_display' => 'Näytettävien ryhmien määrä',
 	'groups:widget:membership' => 'Ryhmien jäsenyys',
 	'groups:widgets:description' => 'Näytä profiilissasi ryhmät, joiden jäsenenä olet',
+
+	'groups:widget:group_activity:title' => 'Ryhmän toiminta',
+	'groups:widget:group_activity:description' => 'Näyttää valitsemasi ryhmän toiminta',
+	'groups:widget:group_activity:edit:select' => 'Valitse',
+	'groups:widget:group_activity:content:noactivity' => 'Ryhmässä ei ole vielä ollut toimintaa',
+	'groups:widget:group_activity:content:noselect' => 'Valitse ryhmä vimpaimen asetuksista',
+
 	'groups:noaccess' => 'Sinulla ei ole oikeuksia tämän ryhmän näkemiseen',
 	'groups:permissions:error' => 'Sinulla ei ole oikeuksia tähän',
 	'groups:ingroup' => 'ryhmässä',
@@ -142,8 +149,6 @@ Osallistu keskusteluun:
 	Group tools
 	*/
 	'groups:enableforum' => 'Ota käyttöön ryhmän keskustelut',
-	'groups:yes' => 'kyllä',
-	'groups:no' => 'ei',
 	'groups:lastupdated' => 'Viimeksi päivitetty %s käyttäjän %s toimesta',
 	'groups:lastcomment' => 'Viimeksi kommentoitu %s käyttäjän %s toimesta',
 
@@ -179,8 +184,6 @@ Osallistu keskusteluun:
 	'groups:addtopic' => 'Lisää keskustelu',
 	'groups:forumlatest' => 'Viimeisin keskustelu',
 	'groups:latestdiscussion' => 'Viimeisin keskustelu',
-	'groups:newest' => 'Uusimmat',
-	'groups:popular' => 'Suosituimmat',
 	'groupspost:success' => 'Vastauksesi tallennettiin',
 	'groupspost:failure' => 'Vastauksen tallentaminen epäonnistui',
 	'groups:alldiscussion' => 'Viimeisimmät keskustelut',
@@ -193,9 +196,7 @@ Osallistu keskusteluun:
 	'groups:lastperson' => 'Viimeisin henkilö',
 	'groups:when' => 'Milloin',
 	'grouptopic:notcreated' => 'Keskusteluja ei vielä ole luotu.',
-	'groups:topicopen' => 'Avoin',
 	'groups:topicclosed' => 'Suljettu',
-	'groups:topicresolved' => 'Käsitelty',
 	'grouptopic:created' => 'Uusi keskustelu luotu.',
 	'groups:topicsticky' => 'Sticky',
 	'groups:topicisclosed' => 'Tämä aihe on suljettu.',
