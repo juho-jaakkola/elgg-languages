@@ -84,10 +84,12 @@ return array(
 	'ElggPlugin:Dependencies:PhpExtension' => 'PHP-laajennos: %s',
 	'ElggPlugin:Dependencies:PhpIni' => 'PHP ini -asetus: %s',
 	'ElggPlugin:Dependencies:Plugin' => 'Plugini: %s',
-	'ElggPlugin:Dependencies:Priority:After' => 'After %s',
-	'ElggPlugin:Dependencies:Priority:Before' => 'Before %s',
+	'ElggPlugin:Dependencies:Priority:After' => 'Liitännäisen %s jälkeen',
+	'ElggPlugin:Dependencies:Priority:Before' => 'Ennen liitännäistä %s',
 	'ElggPlugin:Dependencies:Priority:Uninstalled' => '%s ei ole asennettuna',
 	'ElggPlugin:Dependencies:Suggests:Unsatisfied' => 'Puuttuu',
+
+	'ElggPlugin:Dependencies:ActiveDependent' => 'Käytössä on liitännäisiä, jotka ovat riippuvaisia liitännäisestä %s. Ennen kuin voit deaktivoida sen, sinun pitää deaktivoida seuraavat liitännäiset: %s',
 
 
 	'RegistrationException:EmptyPassword' => 'Salasanakenttä ei voi olla tyhjä',
@@ -103,6 +105,7 @@ return array(
 
 	'pageownerunavailable' => 'Varoitus: Sivun omistajaa %d ei pystytä näyttämään!',
 	'viewfailure' => 'Näkymässä %s ilmeni sisäinen virhe.',
+	'view:missing_param' => "Parametri '%s' puuttuu näkymästä %s",
 	'changebookmark' => 'Kirjanmerkin polku on vanhentunut. Ole hyvä ja vaihda kirjanmerkkisi tälle sivulle',
 	'noaccess' => 'Kohde on poistettu tai sinulla ei ole oikeuksia sen tarkastelemiseen.',
 	'error:missing_data' => 'Pyynnössäsi oli puutteellisia tietoja',
@@ -113,6 +116,16 @@ return array(
 	'error:default:content' => 'Hups... jotain meni pieleen.',
 	'error:404:title' => 'Sivua ei löydy',
 	'error:404:content' => 'Hakemaasi sivua ei löydy.',
+
+	'upload:error:ini_size' => 'Tiedosto, jota yritit lisätä, on liian suuri.',
+	'upload:error:form_size' => 'Tiedosto, jota yritit lisätä, on liian suuri.',
+	'upload:error:partial' => 'Tiedoston lisääminen epäonnistui.',
+	'upload:error:no_file' => 'Et valinnut tiedostoa.',
+	'upload:error:no_tmp_dir' => 'Tiedoston lisääminen ei onnistu.',
+	'upload:error:cant_write' => 'Tiedoston lisääminen ei onnistu.',
+	'upload:error:extension' => 'Tiedoston lisääminen ei onnistu.',
+	'upload:error:unknown' => 'Tiedoston lisääminen epäonnistui.',
+
 
 /**
  * User details
@@ -284,6 +297,7 @@ return array(
 	'profile:editdefault:fail' => 'Uuden profiilikentän tallentaminen epäonnistui',
 	'profile:field_too_long' => 'Profiilitietojasi ei voida tallentaa, sillä osio "%s" on liian pitkä.',
 	'profile:noaccess' => "Sinulla ei ole oikeuksia tämän profiilin muokkaamiseen.",
+	'profile:invalid_email' => 'Syötit virheellisen sähköpostiosoitteen.',
 
 
 /**
@@ -341,10 +355,10 @@ return array(
 
 	'search' => "Haku",
 	'searchtitle' => "Haku: %s",
-	'users:searchtitle' => "Searching for users: %s",
-	'groups:searchtitle' => "Searching for groups: %s",
-	'advancedsearchtitle' => "%s with results matching %s",
-	'notfound' => "No results found.",
+	'users:searchtitle' => "Etsitään käyttäjiä: %s",
+	'groups:searchtitle' => "Etsitään ryhmiä: %s",
+	'advancedsearchtitle' => "%s jotka täsmäävät hakuun %s",
+	'notfound' => "Ei hakutuloksia.",
 	'next' => "Seuraava",
 	'previous' => "Edellinen",
 
@@ -354,11 +368,11 @@ return array(
 
 	'tag:search:startblurb' => "Kohteet, joiden täsmäävät tagiin '%s':",
 
-	'user:search:startblurb' => "Users matching '%s':",
-	'user:search:finishblurb' => "To view more, click here.",
+	'user:search:startblurb' => "Käyttäjät, jotka täsmäävät hakuun '%s':",
+	'user:search:finishblurb' => "Näytä lisää hakutuloksia.",
 
-	'group:search:startblurb' => "Groups matching '%s':",
-	'group:search:finishblurb' => "To view more, click here.",
+	'group:search:startblurb' => "Ryhmät, jotka täsmäävät hakuun '%s':",
+	'group:search:finishblurb' => "Näytä lisää hakutuloksia.",
 	'search:go' => 'Etsi',
 	'userpicker:only_friends' => 'Näytä vain ystävät',
 
@@ -406,8 +420,8 @@ return array(
 	'user:password:fail:notsame' => "Salasanat eivät täsmää!",
 	'user:password:fail:tooshort' => "Salasana on liian lyhyt!",
 	'user:password:fail:incorrect_current_password' => 'Salasana ei vastannut nykyistä salsanaasi.',
-	'user:resetpassword:unknown_user' => 'Virheellinen käyttäjä.',
-	'user:resetpassword:reset_password_confirm' => 'Salasanan nollaus lähettää uuden salasanan sähköpostitse aiemmin rekisteröimääsi sähköpostiosoitteeseen.',
+	'user:changepassword:unknown_user' => 'Virheellinen käyttäjä.',
+	'user:changepassword:change_password_confirm' => 'Salasanan nollaus lähettää uuden salasanan sähköpostitse aiemmin rekisteröimääsi sähköpostiosoitteeseen.',
 
 	'user:set:language' => "Kieliasetukset",
 	'user:language:label' => "Kieli",
@@ -417,8 +431,8 @@ return array(
 	'user:username:notfound' => 'Käyttäjätunnusta %s ei löytynyt.',
 
 	'user:password:lost' => 'Unohtunut salasana',
-	'user:password:resetreq:success' => 'Pyydettiin uutta salasanaa, sähköposti lähetetty',
-	'user:password:resetreq:fail' => 'Uuden salasanan pyytäminen epäonnistui.',
+	'user:password:changereq:success' => 'Pyydettiin uutta salasanaa, sähköposti lähetetty',
+	'user:password:changereq:fail' => 'Uuden salasanan pyytäminen epäonnistui.',
 
 	'user:password:text' => 'Anoaksesi uuden salasanan, syötä alle käyttäjätunnuksesi. Saat sähköpostiisi linkin, jota klikkaamalla sinulle lähetetään uusi salasana.',
 
@@ -474,6 +488,7 @@ return array(
 	'admin:users:find' => 'Etsi',
 
 	'admin:administer_utilities:maintenance' => 'Ylläpitotila',
+	'admin:upgrades' => 'Päivitykset',
 
 	'admin:settings' => 'Asetukset',
 	'admin:settings:basic' => 'Perusasetukset',
@@ -481,6 +496,19 @@ return array(
 	'admin:site:description' => "Tämän hallintapaneelin avulla voit vaikuttaa sivustosi yleisiin asetuksiin. Valitse vaihtoehto alta aloittaaksesi.",
 	'admin:site:opt:linktext' => "Hallinnoi sivuston asetuksia...",
 	'admin:settings:in_settings_file' => 'Tämä asetus on määritetty asetustiedostossa (settings.php)',
+
+	'admin:legend:security' => 'Tietoturva',
+	'admin:site:secret:intro' => 'Elgg käyttää avainta erilaisten tietoturvaa parantavien koodiavainten luomiseen.',
+	'admin:site:secret_regenerated' => "Sivustonlaajuinen avain on uusittu.",
+	'admin:site:secret:regenerate' => "Päivitä avain",
+	'admin:site:secret:regenerate:help' => "Huom: Avaimen uusiminen kumoaa tähän asti luodut avainkoodit, joita käytetään \"Muista minut\"-toiminnossa, sähköpostien vahvistusviesteissä, kutsukoodeissa, yms. Tämä saattaa aiheuttaa ongelmia joillekin käyttäjille.",
+	'site_secret:current_strength' => 'Avaimen vahvuus',
+	'site_secret:strength:weak' => "Heikko",
+	'site_secret:strength_msg:weak' => "Suosittelemme, että uusit sivuston avaimen.",
+	'site_secret:strength:moderate' => "Keskiverto",
+	'site_secret:strength_msg:moderate' => "Suosittelemme, että uusit avaimen taataksesi sivuston tietoturvallisen käytön.",
+	'site_secret:strength:strong' => "Vahva",
+	'site_secret:strength_msg:strong' => "Avain on riittävän vahva. Sitä ei tarvitse uusia.",
 
 	'admin:dashboard' => 'Kojelauta',
 	'admin:widget:online_users' => 'Kirjautuneet käyttäjät',
@@ -521,28 +549,28 @@ kolmeen osioon:
 	'admin:footer:faq' => 'Hallinnan FAQ',
 	'admin:footer:manual' => 'Hallinnan ohjekirja',
 	'admin:footer:community_forums' => 'Elgg-yhteisön keskustelualue',
-	'admin:footer:blog' => 'Elgg Blog',
+	'admin:footer:blog' => 'Elggin virallinen blogi',
 
 	'admin:plugins:category:all' => 'Kaikki',
 	'admin:plugins:category:active' => 'Aktiiviset',
 	'admin:plugins:category:inactive' => 'Inaktiiviset',
 	'admin:plugins:category:admin' => 'Ylläpito',
-	'admin:plugins:category:bundled' => 'Bundled',
-	'admin:plugins:category:nonbundled' => 'Non-bundled',
-	'admin:plugins:category:content' => 'Content',
-	'admin:plugins:category:development' => 'Development',
-	'admin:plugins:category:enhancement' => 'Enhancements',
-	'admin:plugins:category:api' => 'Service/API',
-	'admin:plugins:category:communication' => 'Communication',
-	'admin:plugins:category:security' => 'Security and Spam',
-	'admin:plugins:category:social' => 'Social',
+	'admin:plugins:category:bundled' => 'Oletuspakettiin kuuluvat',
+	'admin:plugins:category:nonbundled' => 'Oletuspakettiin kuulumattomat',
+	'admin:plugins:category:content' => 'Sisältö',
+	'admin:plugins:category:development' => 'Kehitystyökalut',
+	'admin:plugins:category:enhancement' => 'Parannukset',
+	'admin:plugins:category:api' => 'API',
+	'admin:plugins:category:communication' => 'Kommunikointi',
+	'admin:plugins:category:security' => 'Tietoturva ja roskaposti',
+	'admin:plugins:category:social' => 'Sosiaaliset',
 	'admin:plugins:category:multimedia' => 'Multimedia',
-	'admin:plugins:category:theme' => 'Themes',
-	'admin:plugins:category:widget' => 'Widgets',
+	'admin:plugins:category:theme' => 'Teemat',
+	'admin:plugins:category:widget' => 'Vimpaimet',
 	'admin:plugins:category:utility' => 'Apuohjelmat',
 
-	'admin:plugins:markdown:unknown_plugin' => 'Unknown plugin.',
-	'admin:plugins:markdown:unknown_file' => 'Unknown file.',
+	'admin:plugins:markdown:unknown_plugin' => 'Tuntematon liitännäinen.',
+	'admin:plugins:markdown:unknown_file' => 'Tuntematon tiedosto.',
 
 	'admin:notices:could_not_delete' => 'Ilmoituksen poistaminen epäonnistui.',
 	'item:object:admin_notice' => 'Ylläpidon ilmoitus',
@@ -565,49 +593,49 @@ kolmeen osioon:
 	'admin:plugins:deactivate_all' => 'Deaktivoi kaikki',
 	'admin:plugins:activate' => 'Aktivoi',
 	'admin:plugins:deactivate' => 'Deaktivoi',
-	'admin:plugins:description' => "This admin panel allows you to control and configure tools installed on your site.",
-	'admin:plugins:opt:linktext' => "Configure tools...",
-	'admin:plugins:opt:description' => "Configure the tools installed on the site. ",
-	'admin:plugins:label:author' => "Author",
-	'admin:plugins:label:copyright' => "Copyright",
-	'admin:plugins:label:categories' => 'Categories',
-	'admin:plugins:label:licence' => "License",
+	'admin:plugins:description' => "Täällä voit määrittää sivustolla käytössä olevat työkalut sekä niiden asetukset.",
+	'admin:plugins:opt:linktext' => "Konfiguroi työkalut...",
+	'admin:plugins:opt:description' => "Konfiguroi järjestelmään asennetut työkalut. ",
+	'admin:plugins:label:author' => "Tekijä",
+	'admin:plugins:label:copyright' => "Tekijänoikeus",
+	'admin:plugins:label:categories' => 'Kategoriat',
+	'admin:plugins:label:licence' => "Lisenssi",
 	'admin:plugins:label:website' => "URL",
-	'admin:plugins:label:repository' => "Code",
-	'admin:plugins:label:bugtracker' => "Report issue",
-	'admin:plugins:label:donate' => "Donate",
-	'admin:plugins:label:moreinfo' => 'more info',
-	'admin:plugins:label:version' => 'Version',
-	'admin:plugins:label:location' => 'Location',
-	'admin:plugins:label:contributors' => 'Contributors',
-	'admin:plugins:label:contributors:name' => 'Name',
-	'admin:plugins:label:contributors:email' => 'E-mail',
-	'admin:plugins:label:contributors:website' => 'Website',
-	'admin:plugins:label:contributors:username' => 'Community username',
-	'admin:plugins:label:contributors:description' => 'Description',
-	'admin:plugins:label:dependencies' => 'Dependencies',
+	'admin:plugins:label:repository' => "Lähdekoodi",
+	'admin:plugins:label:bugtracker' => "Ilmoita virheestä",
+	'admin:plugins:label:donate' => "Lahjoitukset",
+	'admin:plugins:label:moreinfo' => 'lisätiedot',
+	'admin:plugins:label:version' => 'Versio',
+	'admin:plugins:label:location' => 'Sijainti',
+	'admin:plugins:label:contributors' => 'Tekemiseen osallistuneet',
+	'admin:plugins:label:contributors:name' => 'Nimi',
+	'admin:plugins:label:contributors:email' => 'Sähköposti',
+	'admin:plugins:label:contributors:website' => 'Nettisivu',
+	'admin:plugins:label:contributors:username' => 'Yhteisön käyttäjätunnus',
+	'admin:plugins:label:contributors:description' => 'Kuvaus',
+	'admin:plugins:label:dependencies' => 'Riippuvuudet',
 
-	'admin:plugins:warning:elgg_version_unknown' => 'This plugin uses a legacy manifest file and does not specify a compatible Elgg version. It probably will not work!',
-	'admin:plugins:warning:unmet_dependencies' => 'This plugin has unmet dependencies and cannot be activated. Check dependencies under more info.',
-	'admin:plugins:warning:invalid' => 'This plugin is invalid: %s',
-	'admin:plugins:warning:invalid:check_docs' => 'Check <a href="http://docs.elgg.org/Invalid_Plugin">the Elgg documentation</a> for troubleshooting tips.',
-	'admin:plugins:cannot_activate' => 'cannot activate',
+	'admin:plugins:warning:elgg_version_unknown' => 'Tämä liitännäinen käyttää vanhentunutta manifest-tiedostoa, joka ei sisällä tietoa yhteensopivuudesta eri Elgg-versioiden kanssa. Liitännäinen ei todennäköisesti toimi oikein!',
+	'admin:plugins:warning:unmet_dependencies' => 'Tällä liitännäisellä on puuttuvia riippuvuuksia, joten sitä ei voida aktivoida. Tarkista riippuvuudet lisätiedoista.',
+	'admin:plugins:warning:invalid' => 'Liitännäinen \"%s\" on virheellinen',
+	'admin:plugins:warning:invalid:check_docs' => 'Voit etsiä lisätietoja Elggin <a href="http://docs.elgg.org/Invalid_Plugin">dokumentaatiosta</a>.',
+	'admin:plugins:cannot_activate' => 'ei voi aktivoida',
 
-	'admin:plugins:set_priority:yes' => "Reordered %s.",
-	'admin:plugins:set_priority:no' => "Could not reorder %s.",
-	'admin:plugins:set_priority:no_with_msg' => "Could not reorder %s. Error: %s",
-	'admin:plugins:deactivate:yes' => "Deactivated %s.",
-	'admin:plugins:deactivate:no' => "Could not deactivate %s.",
-	'admin:plugins:deactivate:no_with_msg' => "Could not deactivate %s. Error: %s",
-	'admin:plugins:activate:yes' => "Activated %s.",
-	'admin:plugins:activate:no' => "Could not activate %s.",
-	'admin:plugins:activate:no_with_msg' => "Could not activate %s. Error: %s",
-	'admin:plugins:categories:all' => 'All categories',
-	'admin:plugins:plugin_website' => 'Plugin website',
+	'admin:plugins:set_priority:yes' => "Vaihdettiin liitännäisen \"%s\" prioriteettia.",
+	'admin:plugins:set_priority:no' => "Liitännäisen \"%s\" uudelleenjärjestäminen epäonnistui.",
+	'admin:plugins:set_priority:no_with_msg' => "Liitättäisen \"%s\" uudelleenjärjestäminen epäonnistui. Virheilmoitus: %s",
+	'admin:plugins:deactivate:yes' => "Liitännäinen \"%s\" otettiin pois käytöstä.",
+	'admin:plugins:deactivate:no' => "Liitännäisen \"%s\" deaktivointi epäonnistui.",
+	'admin:plugins:deactivate:no_with_msg' => "Liitännäisen \"%s\" deaktivointi epäonnistui. Virheilmoitus: %s",
+	'admin:plugins:activate:yes' => "Otettiin käyttöön liitännäinen \"%s\".",
+	'admin:plugins:activate:no' => "Liitännäisen \"%s\" aktivoiminen epäonnistui.",
+	'admin:plugins:activate:no_with_msg' => "Liitännäisen \"%s\" aktivoiminen epäonnistui. Virheilmoitus: %s",
+	'admin:plugins:categories:all' => 'Kaikki kategoriat',
+	'admin:plugins:plugin_website' => 'Liitännäisen kotisivu',
 	'admin:plugins:author' => '%s',
-	'admin:plugins:version' => 'Version %s',
-	'admin:plugin_settings' => 'Plugin Settings',
-	'admin:plugins:warning:unmet_dependencies_active' => 'This plugin is active but has unmet dependencies. You may encounter problems. See "more info" below for details.',
+	'admin:plugins:version' => 'Versio %s',
+	'admin:plugin_settings' => 'Liitännäisen asetukset',
+	'admin:plugins:warning:unmet_dependencies_active' => 'Tällä liitännäisellä on puuttuvia riippuvuuksia, mikä voi aiheuttaa ongelmia. Valitse "lisätiedot" nähdäksesi yksityiskohdat.',
 
 	'admin:plugins:dependencies:type' => 'Tyyppi',
 	'admin:plugins:dependencies:name' => 'Nimi',
@@ -621,7 +649,7 @@ kolmeen osioon:
 	'admin:statistics:label:basic' => "Sivuston perustilastot",
 	'admin:statistics:label:numentities' => "Sivustolla olevat kohteet",
 	'admin:statistics:label:numusers' => "Käyttäjien määrä",
-	'admin:statistics:label:numonline' => "Number of users online",
+	'admin:statistics:label:numonline' => "Tällä hetkellä kirjautuneena",
 	'admin:statistics:label:onlineusers' => "Tällä hetkellä kirjautuneena",
 	'admin:statistics:label:admins'=>"Ylläpitäjät",
 	'admin:statistics:label:version' => "Elgg-versio",
@@ -777,7 +805,7 @@ Nämä muutokset vaikuttavat vain sivuston uusiin jäseniin.',
 	'enable' => "Ota käyttöön",
 	'disable' => "Poista käytöstä",
 	'request' => "Lähetä",
-	'complete' => "Complete",
+	'complete' => "Valmis",
 	'open' => 'Avaa',
 	'close' => 'Sulje',
 	'hide' => 'Piilota',
@@ -812,13 +840,14 @@ Nämä muutokset vaikuttavat vain sivuston uusiin jäseniin.',
 	'down' => 'Alas',
 	'top' => 'Ylimmäiseksi',
 	'bottom' => 'Alimmaiseksi',
-	'back' => 'Takaisin',
 	'right' => 'Oikealle',
 	'left' => 'Vasemmalle',
+	'back' => 'Takaisin',
 
 	'invite' => "Kutsu",
 
 	'resetpassword' => "Nollaa salasana",
+	'changepassword' => "Vaihda salasana",
 	'makeadmin' => "Anna ylläpito-oikeudet",
 	'removeadmin' => "Poista ylläpito-oikeudet",
 
@@ -836,17 +865,17 @@ Nämä muutokset vaikuttavat vain sivuston uusiin jäseniin.',
 	'error' => 'Virhe',
 
 	'other' => 'Muu',
-	'options' => 'Options',
-	'advanced' => 'Advanced',
+	'options' => 'Asetukset',
+	'advanced' => 'Lisäasetukset',
 
 	'learnmore' => "Klikkaa tästä lukeaksesi lisää.",
 	'unknown_error' => 'Tuntematon virhe',
 
 	'content' => "content",
 	'content:latest' => 'Viimeisin toiminta',
-	'content:latest:blurb' => 'Alternatively, click here to view the latest content from across the site.',
+	'content:latest:blurb' => 'Näet viimeisimmän toiminnan myös tästä.',
 
-	'link:text' => 'view link',
+	'link:text' => 'näytä linkki',
 
 /**
  * Generic questions
@@ -1044,6 +1073,8 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 	'installation:minify_js:label' => "Pakkaa JavaScript (suositus)",
 	'installation:minify_css:label' => "Pakkaa CSS (suositus)",
 
+	'installation:htaccess:needs_upgrade' => "Elggin juuressa oleva .htaccess-tiedosto pitää päivittää syöttämään polku \"__elgg_uri\"-nimiseen GET-parametriin (voit ottaa mallia htaccess_dist-tiedostosta).",
+
 	'installation:systemcache:description' => "Välimuisti vähentää liitännäisten latausaikaa tallentamalla muistiin niiden käytössä olevien näkymien sijainnit.",
 	'installation:systemcache:label' => "Käytä välimuistia (suositus)",
 
@@ -1052,40 +1083,54 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 	'admin:legend:site_access' => 'Pääsy sivustolle',
 	'admin:legend:debug' => 'Lokit ja virheidenjäljitys',
 
-	'upgrading' => 'Upgrading...',
-	'upgrade:db' => 'Your database was upgraded.',
-	'upgrade:core' => 'Your Elgg installation was upgraded.',
-	'upgrade:unlock' => 'Unlock upgrade',
-	'upgrade:unlock:confirm' => "The database is locked for another upgrade. Running concurrent upgrades is dangerous. You should only continue if you know there is not another upgrade running. Unlock?",
-	'upgrade:locked' => "Cannot upgrade. Another upgrade is running. To clear the upgrade lock, visit the Admin section.",
-	'upgrade:unlock:success' => "Upgrade unlocked suscessfully.",
-	'upgrade:unable_to_upgrade' => 'Unable to upgrade.',
+	'upgrading' => 'Päivitetään...',
+	'upgrade:db' => 'Tietokanta päivitetty.',
+	'upgrade:core' => 'Elgg päivitetty.',
+	'upgrade:unlock' => 'Avaa päivityksen lukitus',
+	'upgrade:unlock:confirm' => "Aiemmin käynnistetty päivitys on lukinnut tietokannan. Useiden päivitysten ajaminen samanaikaisesti on vaarallista, joten avaa lukitus vain jos tiedät, että käynnissä ei ole päivitystä. Avataanko lukitus?",
+	'upgrade:locked' => "Päivitystä ei voida aloittaa, koska käynnissä on jo toinen päivitys. Voit avata lukituksen hallintapaneelista.",
+	'upgrade:unlock:success' => "Avattiin päivityksen lukitus.",
+	'upgrade:unable_to_upgrade' => 'Päivityksen lukituksen avaaminen epäonnistui.',
 	'upgrade:unable_to_upgrade_info' =>
-		'This installation cannot be upgraded because legacy views
-		were detected in the Elgg core views directory. These views have been deprecated and need to be
-		removed for Elgg to function correctly. If you have not made changes to Elgg core, you can
-		simply delete the views directory and replace it with the one from the latest
-		package of Elgg downloaded from <a href="http://elgg.org">elgg.org</a>.<br /><br />
+		'Järjestelmää ei voida päivittää, koska Elggin ytimen näkymähakemistosta
+		(views/default/) löytyi vanhentuneita tiedostoja. Kyseiset tiedostot täytyy
+		poistaa, jotta järjestelmä toimii oikein.<br /><br />
 
-		If you need detailed instructions, please visit the <a href="http://docs.elgg.org/wiki/Upgrading_Elgg">
-		Upgrading Elgg documentation</a>.  If you require assistance, please post to the
-		<a href="http://community.elgg.org/pg/groups/discussion/">Community Support Forums</a>.',
+		Jos Elggin ytimeen ei ole tehty muutoksia, voit poistaa näkymähakemiston
+		kokonaan, ja korvata sen uusimmasta Elgg-julkaisusta löytyvällä hakemistolla.
+		Uusimman julkaisun voit ladata osoitteesta
+		<a href="http://elgg.org/download.php">http://elgg.org/download.php</a>.<br /><br />
 
-	'update:twitter_api:deactivated' => 'Twitter API (previously Twitter Service) was deactivated during the upgrade. Please activate it manually if required.',
-	'update:oauth_api:deactivated' => 'OAuth API (previously OAuth Lib) was deactivated during the upgrade.  Please activate it manually if required.',
+		Lisätietoja saat <a href="http://learn.elgg.org/en/1.9/admin/upgrading.html">
+		Elggin päivitysdokumentaatiosta</a>. Tarvittaessa voit kysyä apua
+		<a href="http://community.elgg.org/groups/discussion/">Elggin tukifoorumilta</a>.',
 
-	'deprecated:function' => '%s() was deprecated by %s()',
+	'update:twitter_api:deactivated' => 'Twitter API (aiemmin "Twitter Service") otettiin pois käytöstä päivityksen aikana. Ota se käyttöön manuaalisesti, mikäli sille on tarvetta.',
+	'update:oauth_api:deactivated' => 'OAuth API (aiemmin "OAuth Lib") otettiin pois käytöstä päivityksen aikana. Ota se käyttöön manuaalisesti, mikäli sille on tarvetta.',
+
+	'deprecated:function' => '%s() on korvattu funktiolla %s()',
 
 	'admin:upgrades' => 'Päivitykset',
 
-	'upgrade:comments:status' => 'Sivustolla pitää päivittää <b>%s</b> kommenttia.',
-	'upgrade:comments:warning' => '<b>Varoitus:</b> päivitys saattaa kestää huomattavan kauan, jos sivustolla on paljon sisältöä!',
-	'upgrade:comments:success_count' => 'Päivityt kommentit:',
-	'upgrade:comments:error_count' => 'Virheet:',
+	'upgrade:item_count' => 'Sivustolla on <b>%s</b> kohdetta, jotka vaativat päivityksen.',
+	'upgrade:warning' => '<b>Varoitus:</b> päivitys saattaa kestää huomattavan kauan, jos sivustolla on paljon sisältöä!',
+	'upgrade:success_count' => 'Päivitetyt kohteet:',
+	'upgrade:error_count' => 'Virheet:',
+	'upgrade:river_update_failed' => 'Ei voitu päivittää kohdetta (id %s) sivuston toimintalistaukseen',
+	'upgrade:timestamp_update_failed' => 'Luontiajan päivittäminen kohteelle %s epäonnistui',
+	'upgrade:finished' => 'Päivitys on valmis',
+	'upgrade:finished_with_errors' => '<p>Päivityksen aikana ilmeni virheitä. Päivitä sivu ja yritä ajaa päivitys uudelleen.<br /></p><p>Jos virheet toistuvat, yritä selvittää niiden syy palvelimen virhelokeista. Tarvittaessa voit pyytää apua Elggin yhteisön <a href="http://community.elgg.org/groups/profile/179063/elgg-technical-support">teknisen tuen ryhmästä</a>.</p>',
+
+	// Strings specific for the comments upgrade
 	'admin:upgrades:comments' => 'Kommenttien päivitys',
-	'upgrade:comments:river_update_failed' => 'Ei voitu päivittää kommenttia (id %s) sivuston toimintalistaukseen',
-	'upgrade:comments:create_failed' => 'Kommentin (id %s) päivittäminen epäonnistui.',
-	'upgrade:comments:finished' => 'Päivitys on valmis',
+	'upgrade:comment:create_failed' => 'Kommentin %s päivittäminen epäonnistui.',
+
+	// Strings specific for the datadir upgrade
+	'admin:upgrades:datadirs' => 'Datahakemiston päivitys',
+
+	// Strings specific for the discussion reply upgrade
+	'admin:upgrades:discussion_replies' => 'Keskustelujen päivitys',
+	'discussion:upgrade:replies:create_failed' => 'Keskusteluviestin %s päivittäminen epäonnistui.',
 
 /**
  * Welcome
@@ -1117,10 +1162,8 @@ Nähdäksesi hänen profiilinsa, siirry tänne:
 
 Tähän viestiin ei voi vastata.",
 
-
-
-	'email:resetpassword:subject' => "Salasana nollattu!",
-	'email:resetpassword:body' => "Hei %s,
+	'email:changepassword:subject' => "Salasana nollattu!",
+	'email:changepassword:body' => "Hei %s,
 
 Salasanasi on nollattu.
 
@@ -1155,11 +1198,13 @@ Jos teit anomuksen, klikkaa alla olevaa linkkiä. Muussa tapauksessa jätä täm
 	'river:comment:object:default' => '%s kommentoi kohdetta %s',
 
 	'generic_comments:add' => "Kommentoi",
+	'generic_comments:edit' => "Muokkaa",
 	'generic_comments:post' => "Lähetä kommentti",
 	'generic_comments:text' => "Kommentti",
 	'generic_comments:latest' => "Viimeisimmät kommentit",
-	'generic_comment:posted' => "Kommenttisi lisättiin.",
-	'generic_comment:deleted' => "Kommenttisi poistettiin.",
+	'generic_comment:posted' => "Kommentti lisätty.",
+	'generic_comment:updated' => "Kommentti päivitetty.",
+	'generic_comment:deleted' => "Kommentti poistettu.",
 	'generic_comment:blank' => "Kommenttiin täytyy kirjoittaa jotain ennen kuin se voidaan tallentaa.",
 	'generic_comment:notfound' => "Kohdetta ei löytynyt.",
 	'generic_comment:notdeleted' => "Kommentin poistaminen epäonnistui.",
