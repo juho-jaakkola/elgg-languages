@@ -1,8 +1,4 @@
 <?php
-/**
- * Bookmarks Finnish language file
- */
-
 return array(
 
 	/**
@@ -26,7 +22,7 @@ return array(
 
 	'bookmarks:notify:summary' => 'Uusi kirjanmerkki: %s',
 	'bookmarks:notify:subject' => 'Uusi kirjanmerkki: %s',
-	'bookmarks:notification' =>
+	'bookmarks:notify:body' =>
 '%s lisäsi uuden kirjanmerkin: %s
 
 Osoite: %s

@@ -1,8 +1,4 @@
 <?php
-/**
- * External pages Finnish language file
- */
-
 return array(
 
 	/**

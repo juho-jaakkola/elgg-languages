@@ -1,8 +1,4 @@
 <?php
-/**
- * Legacy URL language file
- */
-
 return array(
 	'legacy_urls:message' => 'Tämä sivu on siirretty osoitteeseen %s. Päivitä kirjanmerkkisi tai ilmoita vanhentunut linkki sivun omistajalle.',
 

@@ -1,8 +1,4 @@
 <?php
-/**
- * The Wire Finnish language file
- */
-
 return array(
 
 	/**

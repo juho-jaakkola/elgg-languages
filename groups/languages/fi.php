@@ -1,10 +1,4 @@
 <?php
-/**
- * Elgg groups plugin language pack
- *
- * @package ElggGroups
- */
-
 return array(
 
 	/**
@@ -98,7 +92,9 @@ Voit osallistua keskusteluun osoitteessa:
 %s
 ',
 
-	'discussion:notification:reply:body' =>
+	'discussion:reply:notify:summary' => 'Uusi viesti keskustelussa: %s',
+	'discussion:reply:notify:subject' => 'Uusi viesti keskustelussa: %s',
+	'discussion:reply:notify:body' =>
 '%s vastasi keskusteluun  %s ryhmässä %s:
 
 %s
@@ -119,6 +115,7 @@ Osallistu keskusteluun:
 	'groups:invitations:none' => 'Ei odottavia kutsuja.',
 
 	'item:object:groupforumtopic' => "Keskusteluaiheet",
+	'item:object:discussion_reply' => "Vastaukset keskusteluihin",
 
 	'groupforumtopic:new' => "Uusi viesti keskustelussa",
 
@@ -172,8 +169,12 @@ Osallistu keskusteluun:
 	'discussion:error:permissions' => 'Sinulla ei ole oikeuksia tämän toiminnon suorittamiseen',
 	'discussion:error:notdeleted' => 'Keskustelun poistaminen epäonnistui',
 
+	'discussion:reply:edit' => 'Muokkaa',
 	'discussion:reply:deleted' => 'Vastaus poistettu.',
-	'discussion:reply:error:notdeleted' => 'Vastausta ei voitu poistaa',
+	'discussion:reply:error:notfound' => 'Viestiä ei löytynt',
+	'discussion:reply:error:notdeleted' => 'Viestiä ei voitu poistaa',
+
+	'admin:groups' => 'Ryhmät',
 
 	'reply:this' => 'Vastaa',
 
@@ -205,7 +206,6 @@ Osallistu keskusteluun:
 	'groups:forumpost:edited' => "Viesti päivitetty.",
 	'groups:forumpost:error' => "Viestin päivittämisess ilmeni ongelma.",
 
-
 	'groups:privategroup' => 'Tämä ryhmä on suljettu. Anotaan jäsenyyttä.',
 	'groups:notitle' => 'Ryhmällä pitää olla nimi',
 	'groups:cantjoin' => 'Ryhmään liittyminen epäonnistui',
@@ -231,7 +231,7 @@ Osallistu keskusteluun:
 	'groups:invite:remove:check' => 'Haluatko varmasti poistaa tämän kutsun?',
 	'groups:invite:body' => "Hei %s,
 
-%s on kutsunut sinut liittymään ryhmään '%s'. Klikkaa linkkiä nähdäksesi kutsusi:
+%s on kutsunut sinut liittymään ryhmään '%s'. Klikkaa linkkiä nähdäksesi kutsun:
 
 %s",
 
@@ -253,15 +253,15 @@ tai tästä nähdäksesi ryhmän jäsenanomukset:
 
 %s",
 
-	/*
-		Forum river items
-	*/
+	/**
+	 * Forum river items
+	 */
 
 	'river:create:group:default' => '%s loi ryhmän %s',
 	'river:join:group:default' => '%s liittyi ryhmään %s',
 	'river:create:object:groupforumtopic' => '%s lisäsi uuden keskusteluaiheen %s',
 	'river:reply:object:groupforumtopic' => '%s vastasi keskusteluun %s',
-	
+
 	'groups:nowidgets' => 'Tälle ryhmälle ei ole määritetty vimpaimia.',
 
 
@@ -299,7 +299,9 @@ tai tästä nähdäksesi ryhmän jäsenanomukset:
 	'groups:invitekilled' => 'Kutsu poistettu.',
 	'groups:joinrequestkilled' => 'Pyyntö poistettu.',
 
-	// ecml
+	/**
+	 * ecml
+	 */
 	'groups:ecml:discussion' => 'Ryhmän keskustelut',
 	'groups:ecml:groupprofile' => 'Ryhmät',
 );

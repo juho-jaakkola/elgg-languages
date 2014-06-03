@@ -1,18 +1,13 @@
 <?php
-/**
- * Email user validation plugin language pack.
- *
- * @package Elgg.Core.Plugin
- * @subpackage ElggUserValidationByEmail
- */
-
 return array(
 	'admin:users:unvalidated' => 'Vahvistamattomat käyttäjät',
 	
 	'email:validate:subject' => "%s, vahvista sähköpostiosoitteesi palveluun %s.",
 	'email:validate:body' => "%s,
 
-Ennen kuin voit käyttää palvelua %s, sinun pitää vahvistaa sähköpostiosoitteesi klikkaamalla alla olevaa linkkiä:
+Ennen kuin voit käyttää palvelua %s, sinun pitää vahvistaa sähköpostiosoitteesi.
+
+Vahvista osoite klikkaamalla alla olevaa linkkiä:
 
 %s
 
@@ -24,6 +19,7 @@ Jos et voi klikata linkkiä, kopioi se selaimesi osoiteriville.
 	'email:confirm:success' => "Sähköpostiosoitteesi on vahvistettu.",
 	'email:confirm:fail' => "Sähköpostiosoitettasi ei voitu vahvistaa...",
 
+	'uservalidationbyemail:emailsent' => "Osoitteeseen <em>%s</em> on lähetetty vahvistusviesti",
 	'uservalidationbyemail:registerok' => "Saat tilin käyttöösi klikkaamalla sähköpostiisi lähetettyä linkkiä. Jos viestiä ei löydy, tarkista myös roskapostikansio.",
 	'uservalidationbyemail:login:fail' => "Käyttäjätiliäsi ei ole vahvistettu, joten kirjautuminen epäonnistui. Sähköpostiisi on lähetetty uusi vahvistusviesti.",
 

@@ -1,8 +1,4 @@
 <?php
-/**
- * Web services Finnish language file
- */
-
 return array(
 	'APIException:ApiResultUnknown' => "API Result is of an unknown type, this should never happen.",
 	'APIException:MissingParameterInMethod' => "Puuttuva parametri %s metodissa %s",
@@ -14,7 +10,7 @@ return array(
 	'APIException:APIAuthenticationFailed' => "API-autentikointi epäonnistui",
 	'APIException:UserAuthenticationFailed' => "Käyttäjän autentikointi epäonnistui",
 	'APIException:MethodCallNotImplemented' => "Methodikutsua '%s' ei ole olemassa.",
-	'APIException:FunctionDoesNotExist' => "Methodin '%s' functiota ei voida kutsua",
+	'APIException:FunctionDoesNotExist' => "Methodin '%s' funktiota ei voida kutsua",
 	'APIException:AlgorithmNotSupported' => "Algoritmi '%s' ei ole tuettu tai se on pois käytöstä.",
 	'APIException:NotGetOrPost' => "Request method täytyy olla GET tai POST",
 	'APIException:MissingAPIKey' => "Puuttuva API-avain",

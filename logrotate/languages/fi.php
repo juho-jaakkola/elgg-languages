@@ -1,16 +1,6 @@
 <?php
-/**
- * Elgg log rotator language pack.
- *
- * @package ElggLogRotate
- */
-
 return array(
 	'logrotate:period' => 'Kuinka usein järjestelmän loki tulisi arkistoida?',
-
-	'logrotate:weekly' => 'Kerran viikossa',
-	'logrotate:monthly' => 'Kerran kuukaudessa',
-	'logrotate:yearly' => 'Kerran vuodessa',
 
 	'logrotate:logrotated' => "Loki arkistoitu\n",
 	'logrotate:lognotrotated' => "Virhe lokin arkistoimisessa\n",

@@ -1,16 +1,11 @@
 <?php
-/**
- * Elgg developer tools Finnish language file.
- *
- */
-
 return array(
 	// menu
 	'admin:develop_tools' => 'Työkalut',
 	'admin:develop_tools:sandbox' => 'Teemojen kehittäminen',
 	'admin:develop_tools:inspect' => 'Tekninen rakenne',
 	'admin:develop_tools:unit_tests' => 'Yksikkötestit',
-	'admin:developers' => 'Kähittäjät',
+	'admin:developers' => 'Kehittäjät',
 	'admin:developers:settings' => 'Asetukset',
 
 	// settings
@@ -46,7 +41,7 @@ return array(
 	'developers:event_log_msg' => "%s: '%s, %s' in %s",
 
 	// theme sandbox
-	'theme_sandbox:general' => 'Ohjeet',
+	'theme_sandbox:intro' => 'Ohjeet',
 	'theme_sandbox:breakout' => 'Käytä koko näytön tilaa',
 	'theme_sandbox:buttons' => 'Painikkeet',
 	'theme_sandbox:components' => 'Komponentit',
@@ -54,10 +49,12 @@ return array(
 	'theme_sandbox:grid' => 'Palstat',
 	'theme_sandbox:icons' => 'Ikonit',
 	'theme_sandbox:javascript' => 'JavaScript',
-	'theme_sandbox:layouts' => 'Layouts',
+	'theme_sandbox:layouts' => 'Asettelu',
 	'theme_sandbox:modules' => 'Moduulit',
 	'theme_sandbox:navigation' => 'Navigaatio',
 	'theme_sandbox:typography' => 'Typografia',
+
+	'theme_sandbox:icons:blurb' => 'Käytä funktiota <code>elgg_view_icon($name)</code>  tai luokkaa <code>elgg-icon-$name<code> näyttääksesi ikoneita.',
 
 	// unit tests
 	'developers:unit_tests:description' => 'Elgg sisältää yksikkö- ja integraatiotestejä, joiden avulla voidaan havaita virheitä sen ytimen luokissa ja funktioissa.',

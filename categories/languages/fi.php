@@ -1,8 +1,4 @@
 <?php
-/**
- * Categories Finnish language file
- */
-
 return array(
 	'categories' => 'Kategoriat',
 	'categories:settings' => 'Määrittele sivuston kategoriat',

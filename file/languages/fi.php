@@ -1,10 +1,4 @@
 <?php
-/**
- * Elgg file plugin language pack
- *
- * @package ElggFile
- */
-
 return array(
 
 	/**
@@ -99,6 +93,5 @@ Voit nähdä tiedoston täällä:
 	'file:downloadfailed' => "Tiedoston lataaminen epäonnistui.",
 	'file:deletefailed' => "Tiedoston poistaminen epäonnistui.",
 	'file:noaccess' => "Sinulla ei ole oikeuksia tämän tiedoston muuttamiseen",
-	'file:cannotload' => "Tiedoston lisäämisessä tapahtui virhe",
 	'file:nofile' => "Sinun pitää valita tiedosto",
 );

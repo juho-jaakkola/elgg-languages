@@ -1,9 +1,4 @@
 <?php
-/**
- * Embed English language strings
- *
- */
-
 return array(
 	'embed:embed' => 'Upota',
 	'embed:media' => 'Upota sisältöä',

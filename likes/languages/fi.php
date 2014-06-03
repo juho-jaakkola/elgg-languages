@@ -1,8 +1,4 @@
 <?php
-/**
- * Likes Finnish language file
- */
-
 return array(
 	'likes:this' => 'tykkää tästä',
 	'likes:deleted' => 'Tykkäys poistettu',

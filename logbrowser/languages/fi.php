@@ -1,10 +1,4 @@
 <?php
-/**
- * Elgg log browser plugin language pack
- *
- * @package ElggLogBrowser
- */
-
 return array(
 	'admin:administer_utilities:logbrowser' => 'Lokiselain',
 	'logbrowser' => 'Lokiselain',
@@ -23,6 +17,4 @@ return array(
 	'logbrowser:object' => 'Kohteen tyyppi',
 	'logbrowser:object:guid' => 'Kohteen GUID',
 	'logbrowser:action' => 'Toiminto',
-
-	'logbrowser:no_result' => 'Ei tuloksia',
 );

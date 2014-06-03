@@ -1,8 +1,4 @@
 <?php
-/**
- * Custom Index Finnish language file
- */
-
 return array(	
 	'custom:bookmarks' => "Viimeisimmät kirjanmerkit",
 	'custom:groups' => "Viimeisimmät ryhmät",

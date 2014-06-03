@@ -1,9 +1,4 @@
 <?php
-/**
- * Blog Finnish language file.
- *
- */
-
 return array(
 	'blog' => 'Blogit',
 	'blog:blogs' => 'Blogit',
@@ -52,8 +47,8 @@ return array(
 
 	// notifications
 	'blog:notify:summary' => 'Uusi blogiviesti %s',
-	'blog:newpost' => 'Uusi blogiviesti: %s',
-	'blog:notification' =>
+	'blog:notify:subject' => 'Uusi blogiviesti: %s',
+	'blog:notify:body' =>
 '
 %s julkaisi uuden blogikirjoituksen: %s
 

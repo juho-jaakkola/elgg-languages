@@ -1,16 +1,9 @@
 <?php
-/**
- * Elgg diagnostics language pack.
- *
- * @package ElggDiagnostics
- */
-
 return array(
 	'admin:administer_utilities:diagnostics' => 'Järjestelmän diagnostiikka',
 	'diagnostics' => 'Järjestelmän diagnostiikka',
 	'diagnostics:report' => 'Raportti',
 	'diagnostics:description' => 'Tämä diagnostiikkaraportti on hyödyllinen tutkittaessa Elggiin liittyviä ongelmia, ja se tulisi lisätä liitteeksi kaikkiin virheraportteihin.',
-	'diagnostics:download' => 'Lataa',
 	'diagnostics:header' => '========================================================================
 Elgg Diagnostic Report
 Generated %s by %s
