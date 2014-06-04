@@ -1,11 +1,4 @@
 <?php
-/**
- * Core Finnish Language
- *
- * @package Elgg.Core
- * @subpackage Languages.Finnish
- */
-
 return array(
 /**
  * Sites
@@ -1107,10 +1100,22 @@ Kirjauduttuasi on suositeltavaa, että vaihdat salasanasi.
 
 	'update:twitter_api:deactivated' => 'Twitter API (aiemmin "Twitter Service") otettiin pois käytöstä päivityksen aikana. Ota se käyttöön manuaalisesti, mikäli sille on tarvetta.',
 	'update:oauth_api:deactivated' => 'OAuth API (aiemmin "OAuth Lib") otettiin pois käytöstä päivityksen aikana. Ota se käyttöön manuaalisesti, mikäli sille on tarvetta.',
+	'upgrade:site_secret_warning:moderate' => "On suositeltavaa, että uusit sivuston salausavaimen parantaaksesi tietoturvaa. Lisätietoja löydät kohdasta: Asetukset > Lisäasetukset",
+	'upgrade:site_secret_warning:weak' => "Sivustollasi on käytössä liian heikko salausavain, mikä saattaa heikentää tietoturvaa. Uudista salausavain kohdasta: Asetukset > Lisäasetukset",
+
+	'ElggUpgrade:error:url_invalid' => 'Virheellinen URL-osoite.',
+	'ElggUpgrade:error:url_not_unique' => 'Päivitysten osoitteiden täytyy olla yksilöllisiä.',
+	'ElggUpgrade:error:title_required' => 'ElggUpgrade-objekteilla täytyy olla otsikko.',
+	'ElggUpgrade:error:description_required' => 'ElggUpgrade-objekteilla täytyy olla kuvaus.',
+	'ElggUpgrade:error:upgrade_url_required' => 'ElggUpgrade-objekteilla täytyy olla URL-osoite.',
 
 	'deprecated:function' => '%s() on korvattu funktiolla %s()',
 
-	'admin:upgrades' => 'Päivitykset',
+	'admin:pending_upgrades' => 'Sivustolla on odottavia päivityksiä, jotka vaativat välitöntä huomiotasi.',
+	'admin:view_upgrades' => 'Siirry päivityksiin tästä.',
+ 	'admin:upgrades' => 'Päivitykset',
+	'item:object:elgg_upgrade' => 'Sivuston päivitykset',
+	'admin:upgrades:none' => 'Sivustosi on ajan tasalla!',
 
 	'upgrade:item_count' => 'Sivustolla on <b>%s</b> kohdetta, jotka vaativat päivityksen.',
 	'upgrade:warning' => '<b>Varoitus:</b> päivitys saattaa kestää huomattavan kauan, jos sivustolla on paljon sisältöä!',
@@ -1169,8 +1174,8 @@ Salasanasi on nollattu.
 
 Uusi salasanasi on: %s",
 
-	'email:resetreq:subject' => "Anomus salasanan nollaamiseksi.",
-	'email:resetreq:body' => "Hei %s,
+	'email:changereq:subject' => "Anomus salasanan nollaamiseksi.",
+	'email:changereq:body' => "Hei %s,
 
 Joku (IP-osoitteesta %s) on anonut tilillesi uutta salasanaa.
 

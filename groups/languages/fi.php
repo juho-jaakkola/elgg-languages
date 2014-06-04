@@ -36,6 +36,7 @@ return array(
 	'groups:members:more' => "Näytä kaikki jäsenet",
 	'groups:membership' => "Ryhmän jäsenyysasetukset",
 	'groups:content_access_mode' => "Pääsy ryhmän sisältöihin",
+	'groups:content_access_mode:warning' => "Varoitus: Asetuksen muuttaminen vaikuttaa vain uusiin sisältöihin.",
 	'groups:content_access_mode:unrestricted' => "Rajoittamaton - Näkyvyys riippuu kunkin sisällön omasta näkyvyystasosta",
 	'groups:content_access_mode:membersonly' => "Vain jäsenet - Ryhmän ulkopuoliset eivät pääse ollenkaan käsiksi sisältöihin",
 	'groups:access' => "Pääsyoikeudet",
