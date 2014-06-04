@@ -21,8 +21,8 @@ return array(
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s päivitti tilansa %s",
-	'thewire:wire' => '', // This is the last parameter of the previous translation string
+	'river:create:object:thewire' => "%s päivitti %s",
+	'thewire:wire' => 'tilansa', // This is the last parameter of the previous translation string
 
 	/**
 	 * Wire widget
