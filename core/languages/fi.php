@@ -1167,8 +1167,8 @@ Nähdäksesi hänen profiilinsa, siirry tänne:
 
 Tähän viestiin ei voi vastata.",
 
-	'email:changepassword:subject' => "Salasana nollattu!",
-	'email:changepassword:body' => "Hei %s,
+	'email:resetpassword:subject' => "Salasana nollattu!",
+	'email:resetpassword:body' => "Hei %s,
 
 Salasanasi on nollattu.
 
